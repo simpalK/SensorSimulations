@@ -41,7 +41,6 @@ public class SensorDataSet extends Thread {
   synchronized void sense () throws InterruptedException {
 	  try {
 		  
-			String content = "This is the content to write into file";
 
 			File file = new File("logData.txt");
 
@@ -49,13 +48,13 @@ public class SensorDataSet extends Thread {
 			if (!file.exists()) {
 				file.createNewFile();
 			}
-			String value = "sensorId:" + sensId + "value" + new Random(System.currentTimeMillis());
+			String value = "sensorId:" + sensId + ", time: "+ new Date(System.currentTimeMillis()).getTime()  +", value: " + Math.abs(new Random(System.currentTimeMillis()).nextInt()) + ",";
 			FileWriter fw = new FileWriter(file.getAbsoluteFile(),true);
 			BufferedWriter bw = new BufferedWriter(fw);
 			bw.write(value);
 			bw.newLine();
 			bw.close();
-			sensorDataMap.add(sensId + "  value:  " +value);
+			sensorDataMap.add(sensId + ",  value:  " +value + ",");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

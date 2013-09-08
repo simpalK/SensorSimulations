@@ -5,6 +5,7 @@ import java.util.*;
 import static java.lang.System.out;
 
 public class SensorDataGet extends Thread{
+	
 SensorDataSet sensor = null;
 int maxInData;
 int dataCount;
@@ -20,9 +21,11 @@ public void run () {
     if (dataCount <= maxInData) {
     	String fromfileData = lastNlines(fileSensor,10);
         String data_value = sensor.get ();
-        out.println ( "from file" + fromfileData);
-          // Stop both threads if data taking finished.
-      
+       //out.println ( "from file" + fromfileData);
+        String delims = "[ ]+";
+        String[] tokens=fromfileData.split(",");  
+        // Stop both threads if data taking finished.
+        //out.println ( "from file" + tokens[0].toString());
         sensor.stopReadingData ();
         dataCount++;
       
@@ -69,6 +72,8 @@ public String lastNlines( File file, int lines) {
 
         sb.deleteCharAt(sb.length()-1);
         String lastLine = sb.reverse().toString();
+        String delims = "[ ]+";
+        
         return lastLine;
     } catch( java.io.FileNotFoundException e ) {
         e.printStackTrace();

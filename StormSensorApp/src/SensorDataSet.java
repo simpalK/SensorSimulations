@@ -48,7 +48,7 @@ public class SensorDataSet extends Thread {
 			if (!file.exists()) {
 				file.createNewFile();
 			}
-			String value = "sensorId:" + sensId + ", time: "+ new Date(System.currentTimeMillis()).getTime()  +", value: " + Math.abs(new Random(System.currentTimeMillis()).nextInt()) + ",";
+			String value = "sensorId:" + sensId + ", time: "+ new Date(System.currentTimeMillis()).getTime()  +", value: " + Math.abs(new Random(System.currentTimeMillis()).nextInt()) ;
 			FileWriter fw = new FileWriter(file.getAbsoluteFile(),true);
 			BufferedWriter bw = new BufferedWriter(fw);
 			bw.write(value);

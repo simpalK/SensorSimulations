@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.*;
 public class StartSensors {
-    static List<List<String>> sens = new ArrayList<>();
+    static HashMap<String,HashMap<String,String>> sens = new HashMap<String,HashMap<String,String>>();
     
     //topology definition: connection between sensors
     int[][] topo = new int[][]{
@@ -17,11 +17,11 @@ public class StartSensors {
     		};
     
     static File fileSensor = new File("logData.txt");
-    public static void defTopology(List<List<String>> sen)
+    public static void defTopology(HashMap<String, HashMap<String,String>> sens2)
     {
     for(int i=0; i<5; i++)
     {
-    	mapDataFile(sen);
+    	mapDataFile(sens2);
     	//genGapEvent(topo[i][i]);
     	//computeLisa(topo[i]);
     		
@@ -30,20 +30,44 @@ public class StartSensors {
     }
     
     }
-    private void computeLisa(int[] is) {
+    private void computeLisa() {
 		// TODO Auto-generated method stub
+    	
 		
 	}
 	private void genGapEvent(int is) {
 		
 	}
-	private static void mapDataFile(List<List<String>> sen) {
+	private static void mapDataFile(HashMap<String, HashMap<String,String>> sens2) {
 		
-		String fromfileData = lastNlines(fileSensor,20);
-		String[] tokens=fromfileData.split("[,]");  
+		String fromfileData = lastNlines(fileSensor,100);
+		String[] tokens=fromfileData.split("[,\r \n]");  
         int len = tokens.length;
-        // Stop both threads if data taking finished.
-        out.println ( "from file" + tokens.length + tokens[len-1] + tokens[len-2] + tokens[len-3] + tokens[len-4]  );
+        HashMap<String,String> dat1 = new HashMap<String,String>();
+        HashMap<String,String> dat2 = new HashMap<String,String>();
+        HashMap<String,String> dat3 = new HashMap<String,String>();
+
+        for(int i=0;i <len; i++ )
+        {
+        	
+        	if(tokens[i].contains("sensorId:Sensor1"))
+        	{
+        		dat1.put( tokens[i+3],tokens[i+6]);
+        	
+        	}else if(tokens[i].contains("sensorId:Sensor2"))
+        	{
+        		dat2.put( tokens[i+3],tokens[i+6]);;
+
+        	}
+        	else if(tokens[i].contains("sensorId:Sensor3"))
+        	{
+        		dat3.put( tokens[i+3],tokens[i+6]);;
+
+        	}
+        }
+        sens.put("Sensor1",dat1);
+        sens.put("Sensor2",dat2);
+        sens.put("Sensor3",dat3);
         
 		
 	}
@@ -72,6 +96,10 @@ public class StartSensors {
 	     SensorDataGet sensorDataget3 = new SensorDataGet (10, sensorStart3);
 	     sensorDataget3.start ();
 	     defTopology(sens);
+	     out.println ( "Data for Sensor1" + sens.get("Sensor1").toString());
+	        out.println ( "Data from Sensor2" + sens.get("Sensor2").toString());
+	        out.println ( "Data from Sensor3" + sens.get("Sensor3").toString());
+	        
 	}
 	public static String lastNlines( File file, int lines) {
 	    java.io.RandomAccessFile fileHandler = null;
@@ -113,8 +141,8 @@ public class StartSensors {
 	        String[] tokens=lastLine.split("[,]");  
 	        int len = tokens.length;
 	        // Stop both threads if data taking finished.
-	        out.println ( "from file" + tokens.length + tokens[len-1] + tokens[len-2] + tokens[len-3] + tokens[len-4]  );
-	        
+	        //out.println ( "from file" + tokens.length + tokens[len-1] + tokens[len-2] + tokens[len-3] + tokens[len-4]  );
+	        //out.println ( "from file" +  tokens[len-1]   );
 	        return lastLine;
 	    } catch( java.io.FileNotFoundException e ) {
 	        e.printStackTrace();

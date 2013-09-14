@@ -5,10 +5,15 @@ import java.io.IOException;
 import java.lang.reflect.Array;
 import java.util.*;
 public class StartSensors {
-    static HashMap<String,HashMap<String,String>> sens = new HashMap<String,HashMap<String,String>>();
+    static HashMap<String,HashMap<Integer,String>> sens = new HashMap<String,HashMap<Integer,String>>();
+    public static HashMap<Integer,String> dat1 = new HashMap<Integer,String>();
+    public static HashMap<Integer,String> dat2 = new HashMap<Integer,String>();
+    public static HashMap<Integer,String> dat3 = new HashMap<Integer,String>();
+    public static HashMap<Integer,String> dat4 = new HashMap<Integer,String>();
+    public static HashMap<Integer,String> dat5 = new HashMap<Integer,String>();
     
     //topology definition: connection between sensors
-    int[][] topo = new int[][]{
+    static int[][] topo = new int[][]{
     		{1 ,0, 0, 1, 0},
     		{0, 1, 1, 0, 0},
     		{0, 1, 1, 0, 0},
@@ -17,57 +22,79 @@ public class StartSensors {
     		};
     
     static File fileSensor = new File("logData.txt");
-    public static void defTopology(HashMap<String, HashMap<String,String>> sens2)
+    public static void defTopology(HashMap<String, HashMap<Integer, String>> sens2)
     {
     for(int i=0; i<5; i++)
     {
     	mapDataFile(sens2);
     	//genGapEvent(topo[i][i]);
-    	//computeLisa(topo[i]);
+    	computeLisa();
     		
     	
     	
     }
     
     }
-    private void computeLisa() {
+    private static void computeLisa() {
 		// TODO Auto-generated method stub
+    	Double mean=0.0;
+    	int sum =0;
+    	for(int i =0; i<5; i++){
+    		for(int j =0; j<5; j++)
+    		{
+    		if(topo[i][j]==1)	
+    		{
+    		 sum += ParseInteger(sens.get("Sensor" + i).get(dat1.size()-i).toString());
+    		 out.print("sum is " + (sens.get("Sensor1").get(dat1.size()-1)));
+    		}
+    		}
+    	}
     	
 		
 	}
 	private void genGapEvent(int is) {
 		
 	}
-	private static void mapDataFile(HashMap<String, HashMap<String,String>> sens2) {
+	private static void mapDataFile(HashMap<String, HashMap<Integer, String>> sens2) {
 		
 		String fromfileData = lastNlines(fileSensor,100);
 		String[] tokens=fromfileData.split("[,\r \n]");  
         int len = tokens.length;
-        HashMap<String,String> dat1 = new HashMap<String,String>();
-        HashMap<String,String> dat2 = new HashMap<String,String>();
-        HashMap<String,String> dat3 = new HashMap<String,String>();
-
+       
         for(int i=0;i <len; i++ )
         {
         	
         	if(tokens[i].contains("sensorId:Sensor1"))
         	{
-        		dat1.put( tokens[i+3],tokens[i+6]);
+        		dat1.put(dat1.size(),tokens[i+6]);
         	
         	}else if(tokens[i].contains("sensorId:Sensor2"))
         	{
-        		dat2.put( tokens[i+3],tokens[i+6]);;
+        		dat2.put( dat2.size(),tokens[i+6]);;
 
         	}
         	else if(tokens[i].contains("sensorId:Sensor3"))
         	{
-        		dat3.put( tokens[i+3],tokens[i+6]);;
+        		dat3.put( dat3.size(),tokens[i+6]);;
 
         	}
+        	else if(tokens[i].contains("sensorId:Sensor4"))
+        	{
+        		dat4.put(dat4.size(),tokens[i+6]);
+        	
+        	}else if(tokens[i].contains("sensorId:Sensor5"))
+        	{
+        		dat5.put( dat5.size(),tokens[i+6]);;
+
+        	}
+        	
         }
         sens.put("Sensor1",dat1);
         sens.put("Sensor2",dat2);
         sens.put("Sensor3",dat3);
+        sens.put("Sensor4",dat4);
+        sens.put("Sensor5",dat5);
+        
         
 		
 	}
@@ -90,16 +117,32 @@ public class StartSensors {
 	     sensorDataget2.start ();
 	     SensorDataSet sensorStart3 = new SensorDataSet (3);
 	     sensorStart3.start ();
+	     
+	     
 
 	     // Create DataGetter and tell it to obtain
 	     // 100 sensor readings for 3rd sensor.
 	     SensorDataGet sensorDataget3 = new SensorDataGet (10, sensorStart3);
 	     sensorDataget3.start ();
+	     
+	     SensorDataSet sensorStart4 = new SensorDataSet (4);
+	     sensorStart4.start ();
+	     
+	     SensorDataGet sensorDataget4 = new SensorDataGet (10, sensorStart4);
+	     sensorDataget4.start ();
+	     
+	     SensorDataSet sensorStart5 = new SensorDataSet (5);
+	     sensorStart5.start ();
+	     
+	     SensorDataGet sensorDataget5 = new SensorDataGet (10, sensorStart5);
+	     sensorDataget5.start ();
+	     
 	     defTopology(sens);
-	     out.println ( "Data for Sensor1" + sens.get("Sensor1").toString());
+	     	out.println ( "Data for Sensor1" + sens.get("Sensor1").toString());
 	        out.println ( "Data from Sensor2" + sens.get("Sensor2").toString());
 	        out.println ( "Data from Sensor3" + sens.get("Sensor3").toString());
-	        
+	        out.println ( "Data from Sensor4" + sens.get("Sensor4").toString());
+	        out.println ( "Data from Sensor5" + sens.get("Sensor5").toString());
 	}
 	public static String lastNlines( File file, int lines) {
 	    java.io.RandomAccessFile fileHandler = null;

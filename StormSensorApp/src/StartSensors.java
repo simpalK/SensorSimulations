@@ -1,4 +1,5 @@
 import static java.lang.System.out;
+import java.lang.Number;
 
 import java.io.File;
 import java.io.IOException;
@@ -36,7 +37,6 @@ public class StartSensors {
     
     }
     private static void computeLisa() {
-		// TODO Auto-generated method stub
     	Double mean=0.0;
     	int sum =0;
     	for(int i =0; i<5; i++){
@@ -44,7 +44,8 @@ public class StartSensors {
     		{
     		if(topo[i][j]==1)	
     		{
-    		 sum += ParseInteger(sens.get("Sensor" + i).get(dat1.size()-i).toString());
+    			String sensorName = "Sensor" + (i+1);
+    		 sum += Integer.parseInt(sens.get(sensorName).get(dat1.size()-2).toString());
     		 out.print("sum is " + (sens.get("Sensor1").get(dat1.size()-1)));
     		}
     		}

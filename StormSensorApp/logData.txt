@@ -373,3 +373,13 @@ sensorId:Sensor3, time: 1379050883655, value: 2036017093
 sensorId:Sensor3, time: 1379051053516, value: 934509996
 sensorId:Sensor4, time: 1379051053519, value: 934894745
 sensorId:Sensor5, time: 1379051053520, value: 945282965
+sensorId:Sensor1, time: 1379238625441, value: 304962369
+sensorId:Sensor3, time: 1379238625442, value: 306116616
+sensorId:Sensor4, time: 1379238625442, value: 306116616
+sensorId:Sensor2, time: 1379238625441, value: 304962369
+sensorId:Sensor5, time: 1379238625444, value: 303808122
+sensorId:Sensor1, time: 1379240178219, value: 831398703
+sensorId:Sensor2, time: 1379240178234, value: 824857972
+sensorId:Sensor3, time: 1379240178235, value: 825242721
+sensorId:Sensor4, time: 1379240178235, value: 825242721
+sensorId:Sensor5, time: 1379240178236, value: 827166465

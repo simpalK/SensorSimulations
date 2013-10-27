@@ -1,6 +1,6 @@
 import static java.lang.System.out;
 import java.lang.Number;
-
+import java.math.BigDecimal;
 import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Array;
@@ -15,11 +15,11 @@ public class StartSensors {
     
     //topology definition: connection between sensors
     static int[][] topo = new int[][]{
-    		{1 ,0, 0, 1, 0},
-    		{0, 1, 1, 0, 0},
-    		{0, 1, 1, 0, 0},
-    		{1, 0, 0, 1, 1},
-    		{0, 0, 0, 1, 1}
+    		{0, 0, 0, 1, 0},
+    		{1, 0, 1, 0, 0},
+    		{0, 1, 0, 0, 0},
+    		{1, 0, 0, 0, 1},
+    		{1, 0, 0, 1, 0}
     		};
     
     static File fileSensor = new File("logData.txt");
@@ -38,21 +38,95 @@ public class StartSensors {
     }
     private static void computeLisa() {
     	Double mean=0.0;
-    	int sum =0;
+    	BigDecimal sum =new BigDecimal(0);
+    	String sensorName;
+    	BigDecimal result=new BigDecimal(0);
     	for(int i =0; i<5; i++){
+    		
     		for(int j =0; j<5; j++)
     		{
-    		if(topo[i][j]==1)	
-    		{
-    			String sensorName = "Sensor" + (i+1);
-    		 sum += Integer.parseInt(sens.get(sensorName).get(dat1.size()-2).toString());
-    		 out.print("sum is " + (sens.get("Sensor1").get(dat1.size()-1)));
+    			
+    			if(i!=j && topo[i][j]==1){
+    			switch (j) {
+    			case 0:    
+    				sensorName = "Sensor" + (1);
+        			
+    				sum = sum.add(new BigDecimal(Integer.parseInt(sens.get(sensorName).get(dat1.size()-1).toString())));
+        			
+        			//out.print("sum is " + sensorName + "::" +(sens.get("Sensor1").get(dat1.size()-1 +"\n")));
+    			//sum += Integer.parseInt(sens.get(sensorName).get(dat1.size()-1).toString());
+    			//out.print("sum is " + sensorName + "::" + (sens.get("Sensor1").get(dat1.size()-1)));
+    			
+    			case 1: 
+        			sensorName = "Sensor" + (2);
+        			
+        			sum =	sum.add(new BigDecimal(Integer.parseInt(sens.get(sensorName).get(dat2.size()-1).toString())));
+        			//out.print("sum is " + sensorName + "::" +(sens.get("Sensor1").get(dat2.size()-1 +"\n")));
+        			
+    			case 2: 
+        			sensorName = "Sensor" + (3);
+        			
+        			sum =sum.add(new BigDecimal(Integer.parseInt(sens.get(sensorName).get(dat3.size()-1).toString())));
+        			//out.print("sum is " + sensorName + "::" + (sens.get("Sensor1").get(dat3.size()-1)+"\n"));
+        			
+    			case 3: 
+        			sensorName = "Sensor" + (4);
+                    
+        			sum =sum.add(new BigDecimal(Integer.parseInt(sens.get(sensorName).get(dat4.size()-1).toString())));
+        			//out.print("sum is " + sensorName + "::" + (sens.get("Sensor1").get(dat4.size()-1)+"\n"));
+    			case 4: 
+        			sensorName = "Sensor" + (5);
+        			
+        			sum =sum.add(new BigDecimal(Integer.parseInt(sens.get(sensorName).get(dat5.size()-1).toString())));
+        			//out.print("sum is " + sensorName + "::" + (sens.get("Sensor5").get(dat5.size()-1)+"\n"));
+        					
+    			}
+    			        
     		}
+    		switch (i) {
+    			case 0:    
+    				sensorName = "Sensor" + (1);
+        			
+    				sum = sum.add(new BigDecimal(Integer.parseInt(sens.get(sensorName).get(dat1.size()-1).toString())));
+        			
+        			//out.print("sum is " + sensorName + "::" +(sens.get("Sensor1").get(dat1.size()-1 +"\n")));
+    			//sum += Integer.parseInt(sens.get(sensorName).get(dat1.size()-1).toString());
+    			//out.print("sum is " + sensorName + "::" + (sens.get("Sensor1").get(dat1.size()-1)));
+    			
+    			case 1: 
+        			sensorName = "Sensor" + (2);
+        			
+        			sum =	sum.add(new BigDecimal(Integer.parseInt(sens.get(sensorName).get(dat2.size()-1).toString())));
+        			//out.print("sum is " + sensorName + "::" +(sens.get("Sensor1").get(dat2.size()-1 +"\n")));
+        			
+    			case 2: 
+        			sensorName = "Sensor" + (3);
+        			
+        			sum =sum.add(new BigDecimal(Integer.parseInt(sens.get(sensorName).get(dat3.size()-1).toString())));
+        			//out.print("sum is " + sensorName + "::" + (sens.get("Sensor1").get(dat3.size()-1)+"\n"));
+        			
+    			case 3: 
+        			sensorName = "Sensor" + (4);
+                    
+        			sum =sum.add(new BigDecimal(Integer.parseInt(sens.get(sensorName).get(dat4.size()-1).toString())));
+        			//out.print("sum is " + sensorName + "::" + (sens.get("Sensor1").get(dat4.size()-1)+"\n"));
+    			case 4: 
+        			sensorName = "Sensor" + (5);
+        			
+        			sum =sum.add(new BigDecimal(Integer.parseInt(sens.get(sensorName).get(dat5.size()-1).toString())));
+        			//out.print("sum is " + sensorName + "::" + (sens.get("Sensor5").get(dat5.size()-1)+"\n"));
+        		       			
+    		
     		}
+    			
+    	}
+    		out.print("sum of sensor " + (i+1) + " is ::  " + sum);
+			sum = new BigDecimal(0);
     	}
     	
 		
 	}
+    
 	private void genGapEvent(int is) {
 		
 	}

@@ -23,12 +23,12 @@ public class SensorDataSet extends Thread {
     	sensorDataMap = new LinkedList();
     }
     public void stopReadingData (){
-	    sensorFlag = false;
+	    sensorFlag = true;
 	  }
   public void run (){
 	    while (sensorFlag)
 			try {
-    			  Thread.sleep(1000);
+    			  Thread.sleep(30000);
 				sense ();
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block

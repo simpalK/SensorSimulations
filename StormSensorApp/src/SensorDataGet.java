@@ -20,7 +20,7 @@ public void run () {
     Random r = new Random ();
     if (dataCount <= maxInData) {
     	String fromfileData = lastNlines(fileSensor,10);
-        String data_value = sensor.get ();
+        String data_value = sensor.get();
        //out.println ( "from file" + fromfileData);
         String delims = "[ ]+";
         String[] tokens=fromfileData.split(",");  

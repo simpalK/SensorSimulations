@@ -28,7 +28,7 @@ public class SensorDataSet extends Thread {
   public void run (){
 	    while (sensorFlag)
 			try {
-    			  Thread.sleep(100);
+    			  Thread.sleep(1000);
 				sense ();
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block

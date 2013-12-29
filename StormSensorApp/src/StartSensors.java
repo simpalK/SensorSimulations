@@ -26,10 +26,10 @@ public class StartSensors {
     static File fileSensor = new File("logData.txt");
     public static void defTopology(HashMap<String, HashMap<Integer, String>> sens2)
     {
-    	mapDataFile(sens2);
+    	//mapDataFile(sens2);
     	
     	//genGapEvent(topo[i][i]);
-    	computeLisa();
+    	//computeLisa();
     		
     	
     	
@@ -257,50 +257,50 @@ public class StartSensors {
 	}
 
 	public static void main(String[] args) {
-		SensorDataSet sensorStart = new SensorDataSet (1);
+		SensorDataSet sensorStart = new SensorDataSet (0);
 	     sensorStart.start ();
 
 	     // Create DataGetter and tell it to obtain
 	     // 100 sensor readings for first sensor.
-	     SensorDataGet sensorDataget = new SensorDataGet (10, sensorStart);
-	     sensorDataget.start ();
+	     //SensorDataGet sensorDataget = new SensorDataGet (10, sensorStart);
+	     //sensorDataget.start ();
 	     
-	     SensorDataSet sensorStart2 = new SensorDataSet (2);
+	     SensorDataSet sensorStart2 = new SensorDataSet (1);
 	     sensorStart2.start ();
 
 	     // Create DataGetter and tell it to obtain
 	     // 100 sensor readings for second sensor.
-	     SensorDataGet sensorDataget2 = new SensorDataGet (10, sensorStart2);
-	     sensorDataget2.start ();
-	     SensorDataSet sensorStart3 = new SensorDataSet (3);
+	     //SensorDataGet sensorDataget2 = new SensorDataGet (10, sensorStart2);
+	     //sensorDataget2.start ();
+	     SensorDataSet sensorStart3 = new SensorDataSet (2);
 	     sensorStart3.start ();
 	     
 	     
 
 	     // Create DataGetter and tell it to obtain
 	     // 100 sensor readings for 3rd sensor.
-	     SensorDataGet sensorDataget3 = new SensorDataGet (10, sensorStart3);
-	     sensorDataget3.start ();
+	     //SensorDataGet sensorDataget3 = new SensorDataGet (10, sensorStart3);
+	     //sensorDataget3.start ();
 	     
-	     SensorDataSet sensorStart4 = new SensorDataSet (4);
+	     SensorDataSet sensorStart4 = new SensorDataSet (3);
 	     sensorStart4.start ();
 	     
-	     SensorDataGet sensorDataget4 = new SensorDataGet (10, sensorStart4);
-	     sensorDataget4.start ();
+	     //SensorDataGet sensorDataget4 = new SensorDataGet (10, sensorStart4);
+	     //sensorDataget4.start ();
 	     
-	     SensorDataSet sensorStart5 = new SensorDataSet (5);
+	     SensorDataSet sensorStart5 = new SensorDataSet (4);
 	     sensorStart5.start ();
 	     
-	     SensorDataGet sensorDataget5 = new SensorDataGet (10, sensorStart5);
-	     sensorDataget5.start ();
+	     //SensorDataGet sensorDataget5 = new SensorDataGet (10, sensorStart5);
+	     //sensorDataget5.start ();
 	     
-	     defTopology(sens);
+	     /*defTopology(sens);
 	        out.println("\n");
 	     	out.println ( "Data for Sensor1" + sens.get("Sensor1").toString());
 	        out.println ( "Data from Sensor2" + sens.get("Sensor2").toString());
 	        out.println ( "Data from Sensor3" + sens.get("Sensor3").toString());
 	        out.println ( "Data from Sensor4" + sens.get("Sensor4").toString());
-	        out.println ( "Data from Sensor5" + sens.get("Sensor5").toString());
+	        out.println ( "Data from Sensor5" + sens.get("Sensor5").toString());*/
 	}
 	public static String lastNlines( File file, int lines) {
 	    java.io.RandomAccessFile fileHandler = null;

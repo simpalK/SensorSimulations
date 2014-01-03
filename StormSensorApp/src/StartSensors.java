@@ -24,17 +24,12 @@ public class StartSensors {
     		};
     
     static File fileSensor = new File("logData.txt");
-    public static void defTopology(HashMap<String, HashMap<Integer, String>> sens2)
+   /* public static void defTopology(HashMap<String, HashMap<Integer, String>> sens2)
     {
     	//mapDataFile(sens2);
     	
     	//genGapEvent(topo[i][i]);
-    	//computeLisa();
-    		
-    	
-    	
-    
-    
+    	//computeLisa();    
     }
     private static BigDecimal computeSD(BigDecimal mean,List<BigDecimal> values){
     	BigDecimal sdVal = new BigDecimal(0);
@@ -254,7 +249,7 @@ public class StartSensors {
         
         
 		
-	}
+	}*/
 
 	public static void main(String[] args) {
 		SensorDataSet sensorStart = new SensorDataSet (0);
@@ -291,6 +286,13 @@ public class StartSensors {
 	     SensorDataSet sensorStart5 = new SensorDataSet (4);
 	     sensorStart5.start ();
 	     
+	     
+	     SensorInfoJson sensorJsonInfo = new SensorInfoJson();
+	     sensorJsonInfo.start ();
+	     
+	     //SensorDataGet sensorFilesDeleteData = new SensorDataGet();
+	     //sensorFilesDeleteData.start ();
+	     
 	     //SensorDataGet sensorDataget5 = new SensorDataGet (10, sensorStart5);
 	     //sensorDataget5.start ();
 	     
@@ -302,7 +304,7 @@ public class StartSensors {
 	        out.println ( "Data from Sensor4" + sens.get("Sensor4").toString());
 	        out.println ( "Data from Sensor5" + sens.get("Sensor5").toString());*/
 	}
-	public static String lastNlines( File file, int lines) {
+	/*public static String lastNlines( File file, int lines) {
 	    java.io.RandomAccessFile fileHandler = null;
 	    try {
 	        fileHandler = 
@@ -358,8 +360,6 @@ public class StartSensors {
 	                fileHandler.close();
 	            } catch (IOException e) {
 	                /* ignore */
-	            }
-	    }
-	}
+	          
 
 }

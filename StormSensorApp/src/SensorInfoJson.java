@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,6 +13,7 @@ import java.util.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.concurrent.TimeUnit;
 
 import javax.json.Json;
 import javax.json.JsonArray;
@@ -20,50 +22,122 @@ import javax.json.JsonObject;
 import javax.json.JsonWriter;
 import javax.json.stream.JsonGenerator;
 
+import org.apache.commons.io.FileUtils;
+
 import static java.lang.System.out;
 
 public class SensorInfoJson extends Thread {
 	JsonArray jsonArrayNode;
-	JsonArrayBuilder jsonArrayBuild= Json.createArrayBuilder();
 	JsonArray jsonArrayLinks;
 	JsonArrayBuilder jsonArrayBuildLinks = Json.createArrayBuilder();
 
 	FileReader fileReader;
+	FileReader topologyReader;
 	String[] tokens =new String[10000];
-	String[] filteredTokens =new String[5];
-	int[][] topo = new int[][]{
-      		{1, 0, 0, 1, 0},
-      		{1, 1, 1, 0, 0},
-      		{0, 1, 1, 0, 0},
-      		{1, 0, 0, 1, 1},
-      		{1, 0, 0, 1, 1}
-      		};
+	String[] filteredTokens =new String[16];
+	String[] sensorsIds = {"N-H563T",	"N-QWNZH",	"N-LETTK",	"N-SCK04",	"N-8HOVD",	"N-2GWON",	"N-UFCUA",	"N-6PFYW",	"N-TZD20",	"N-WRYAZ",	"N-3IK0Y",	"N-JQ338",	"N-Y47X6",	"N-2Z2WK",	"N-GRDHN",	"N-L04BJ"};
+	String[] finalAddedTokens =new String[16];
+	String[] topologyRows =new String[16];
+
+	
+	int[][] coOrdinates = new int[][]{
+			{100, 400},
+			{200, 400},
+			{300, 400},
+			{400, 400},
+			{100, 300},
+			{200, 300},
+			{300, 300},
+			{400, 300},
+			{100, 200},
+			{200, 200},
+			{300, 200},
+			{400, 200},
+			{100, 100},
+			{200, 100},
+			{300, 100},
+			{400, 100}
+	};
 	int countLines=0;
 	int countFilterLines =0;
+	int topologyLines = 0;
 	LinkedList sensorDataMap; 
 	private final long sensorStart = System.currentTimeMillis();
 	public String lastSensorData = null;
 	Date myClock = new Date();
     boolean sensorFlag = true;
     private int sensId;
+    int[][] topoFromFile= new int[16][16];
     
    
   public void run (){
-	  FileInputStream in=null;
+
+	  try {
+		sense ();
+
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+  }
+	  
+	  synchronized void sense () throws InterruptedException {
+
+	   /* File fileSensor = new File("/home/simpal/stormSensorReco/SensorSimulation/SensorSimulations/StormSensorApp/d3.v3/jsonDataD3.json");
+
+	  //FileUtils.deleteQuietly(new File("/home/simpal/stormSensorReco/SensorSimulation/SensorSimulations/StormSensorApp/d3.v3/jsonDataD3.json"));
+	  if (fileSensor.exists()) {
+		  PrintWriter writer;
+		try {
+			writer = new PrintWriter(fileSensor);
+			writer.print("");
+	      	writer.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+      	
+		}*/
+	 
+	 FileInputStream in=null;
       String str = "";
       String sentence="";
+  	  finalAddedTokens =new String[16];
+  	  tokens =new String[10000];
+	  filteredTokens =new String[16];
+	  countLines=0;
+	  countFilterLines =0;
+	  topologyLines = 0;
    // A simple array
      // JsonProvider parser = new JsonProvider();
       try{
       	//define links based on topo array or it can be done by parsing groupid coming from bolt 
-      	
-          	for(int i=0; i<5; i++){
-      			for(int j=0; j<5; j++){
-      				if(topo[i][j]==1){
+			//topologyReader = new FileReader("/home/simpal/stormSensorReco/SensorSimulation/SensorSimulations/StormSensorApp/topologyInformation.txt");
+    	  Scanner inputStream = null;
+			try
+			{
+			  inputStream = new Scanner(new File("/home/simpal/stormSensorReco/SensorSimulation/SensorSimulations/StormSensorApp/topologyInformation.txt"));//The txt file is being read correctly.
+			}
+			catch(FileNotFoundException e)
+			{
+			  System.exit(0);
+			}
+            
+			for (int row = 0; row < 16; row++) {
+			    String line = inputStream.nextLine();
+			    String[] lineValues = line.split(",");
+			  for (int column = 0; column < 16; column++) {
+			    topoFromFile[row][column] = Integer.parseInt(lineValues[column]);
+			  }
+			}
+			inputStream.close();
+          	for(int i=0; i<16; i++){
+      			for(int j=0; j<16; j++){
+      				if(topoFromFile[i][j]==1){
       					JsonObject jsonObjectLink = Json.createObjectBuilder()
       		        			.add("source", i)
       		        			.add("target", j)
-      		        			.add("value",i)
+      		        			.add("value",1)
       		        			.build();
       					jsonArrayBuildLinks.add(jsonObjectLink);
       				}
@@ -71,7 +145,7 @@ public class SensorInfoJson extends Thread {
       			} 
       	
 			fileReader = new FileReader("/home/simpal/stormSensorReco/SensorSimulation/SensorSimulations/StormSensorApp/jsonSensorFile.txt");
-			
+
 			BufferedReader reader = new BufferedReader(fileReader);
   		while((str = reader.readLine()) != null){
   			tokens[countLines++] =str;
@@ -87,7 +161,7 @@ public class SensorInfoJson extends Thread {
                   	Boolean foundItem = false;
                   	for(int j=0;j<countFilterLines;j++){
                       	String[] sensorCurrentVal = filteredTokens[j].split(",");
-                  		if(sensorCurrentVal[1].contentEquals(sensorVal[1])){
+                  		if(sensorCurrentVal[1].contains(sensorVal[1])){
                   			foundItem = true;
                   		break;
                   		}
@@ -97,29 +171,52 @@ public class SensorInfoJson extends Thread {
                   }
               }
       	}
+        for(int k=0; k<16; k++){
+        	Boolean foundSensor= false;
+        	String findSensor = sensorsIds[k];
+        	for(int l=0; l<countFilterLines; l++)
+        		{
+              	String[] sensorCurrentVal = filteredTokens[l].split(",");
+        		if(findSensor.contentEquals(sensorCurrentVal[1])){
+        			finalAddedTokens[k]= filteredTokens[l];
+        			foundSensor= true;
+        			break;
+        		}
+        		}
+        	if(foundSensor== false)
+        		finalAddedTokens[k] = "noGroup," + sensorsIds[k] + ",no data,notimestamp,noValue";
+        }      	
+      	/*if(filteredTokens[0] !=null){
       	Arrays.sort(filteredTokens, new Comparator<String>() {
       	    public int compare(String str1, String str2) {
       	    	//change the substring to sort array based on sensor when groupid is longer
-      	        String substr1 = str1.substring(6);
-      	        String substr2 = str2.substring(6);
+      	        String substr1 = str1.substring(16);
+      	        String substr2 = str2.substring(16);
 
       	        return substr1.compareTo(substr2);
       	    }
+      	
       	});
+      	}*/
 
-          
-          for(int i=0;i<countFilterLines;i++){
-          	String word = filteredTokens[i];
+    	JsonArrayBuilder jsonArrayBuild= Json.createArrayBuilder();
+
+        for(int i=0;i<16;i++){
+          	String word = finalAddedTokens[i];
           	String[] senseVal = word.split(",");
               word = word.trim();
               if(!word.isEmpty()){
               	JsonObject jsonObject1 = Json.createObjectBuilder()
               			.add("sensorId", senseVal[1])
               			.add("group", senseVal[4])
+              			.add("x", coOrdinates[i][0] )
+              			.add("y", coOrdinates[i][1])
+              			.add("fixed", true)
               			.build();
               	jsonArrayBuild.add(jsonObject1);
               }
           }
+          
           jsonArrayNode = jsonArrayBuild.build();
           jsonArrayLinks = jsonArrayBuildLinks.build();
           
@@ -166,18 +263,25 @@ public class SensorInfoJson extends Thread {
       			.add("nodes", jsonArrayNode)
       			.add("links", jsonArrayLinks)
       			.build();
+        //jsonArrayNode.clear();
+
       	// config Map is created for pretty printing.
       	Map<String, Boolean> config = new HashMap<>();
 
       	// Pretty printing feature is added.
       	config.put(JsonGenerator.PRETTY_PRINTING, true);
-
-      	try (PrintWriter pw = new PrintWriter("/home/simpal/stormSensorReco/SensorSimulation/SensorSimulations/StormSensorApp/d3.v3/jsonDataD3.json")
-          ;JsonWriter jsonWriter = Json.createWriterFactory(config).createWriter(pw)) {
+	   // File file = new File("/home/simpal/stormSensorReco/SensorSimulation/SensorSimulations/StormSensorApp/d3.v3/jsonDataD3.json");
+       //if(file.exists())file.createNewFile();
+      	try {
+      	FileWriter pw = new FileWriter("/home/simpal/stormSensorReco/SensorSimulation/SensorSimulations/StormSensorApp/d3.v3/jsonDataD3.json",false);
+      			JsonWriter jsonWriter = Json.createWriterFactory(config).createWriter(pw);
 
       		// Json object is being sent into file system
       		
-      		jsonWriter.writeObject(jsonObject);   		
+      		jsonWriter.writeObject(jsonObject);  
+      		//jsonObject.clear();
+      		jsonWriter.close();
+      		pw.close();
 		   System.out.print("writing info in json file****************************");
       	} catch (IOException e) {
 			// TODO Auto-generated catch block
@@ -188,7 +292,7 @@ public class SensorInfoJson extends Thread {
           	}finally {
 			        
 			    }
-          	         		                 
+		  	         		                 
     }
 
 }

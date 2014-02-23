@@ -20,13 +20,19 @@ import static java.lang.System.out;
 public class SensorDataSet extends Thread {
 	LinkedList sensorDataMap; 
 	private final long sensorStart = System.currentTimeMillis();
+	Random randomParameterVal = new Random();
+	int high = 2000;
+	int low = 10;
 	public String lastSensorData = null;
 	Date myClock = new Date();
     boolean sensorFlag = true;
-    private int sensId;
-    SensorDataSet(int sensorId) {
-    	sensId = sensorId;
+    private String sensId;
+	File file;
+
+    SensorDataSet(String sensorsIds, File file) {
+    	sensId = sensorsIds;
     	sensorDataMap = new LinkedList();
+    	this.file = file;
     }
     public void stopReadingData (){
 	    sensorFlag = true;
@@ -44,7 +50,6 @@ public class SensorDataSet extends Thread {
     
   synchronized void sense () throws InterruptedException {
 	  try {
-			File file = new File("logDataSensor.txt");
 
 			// if file doesnt exists, then create it
 			if (!file.exists()) {
@@ -82,7 +87,7 @@ public class SensorDataSet extends Thread {
 			   //get current date time with Calendar()
 			   Calendar cal = Calendar.getInstance();
 			  // System.out.println(dateFormat.format(cal.getTime()));
-			String value = sensId + "," + Math.abs(new Random(System.currentTimeMillis()).nextInt())+ "," + dateFormat.format(cal.getTime());
+			String value = sensId + "," + (randomParameterVal.nextGaussian()) + "," + dateFormat.format(cal.getTime());
 			FileWriter fw = new FileWriter(file.getAbsoluteFile(),true);
 			BufferedWriter bw = new BufferedWriter(fw);
 			bw.write(value);

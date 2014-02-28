@@ -3,14 +3,14 @@
     "nodes":[
         {
             "sensorId":"N-H563T",
-            "group":"noValue",
+            "group":"0.0",
             "x":100,
             "y":400,
             "fixed":true
         },
         {
             "sensorId":"N-QWNZH",
-            "group":"noValue",
+            "group":"-0.0",
             "x":200,
             "y":400,
             "fixed":true
@@ -24,7 +24,7 @@
         },
         {
             "sensorId":"N-SCK04",
-            "group":"0.0",
+            "group":"noValue",
             "x":400,
             "y":400,
             "fixed":true
@@ -66,14 +66,14 @@
         },
         {
             "sensorId":"N-WRYAZ",
-            "group":"-0.0",
+            "group":"noValue",
             "x":200,
             "y":200,
             "fixed":true
         },
         {
             "sensorId":"N-3IK0Y",
-            "group":"noValue",
+            "group":"0.0",
             "x":300,
             "y":200,
             "fixed":true
@@ -87,7 +87,7 @@
         },
         {
             "sensorId":"N-Y47X6",
-            "group":"noValue",
+            "group":"1.0737713410920422",
             "x":100,
             "y":100,
             "fixed":true
@@ -108,7 +108,7 @@
         },
         {
             "sensorId":"N-L04BJ",
-            "group":"noValue",
+            "group":"0.0",
             "x":400,
             "y":100,
             "fixed":true

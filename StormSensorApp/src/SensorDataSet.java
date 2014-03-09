@@ -40,7 +40,7 @@ public class SensorDataSet extends Thread {
   public void run (){
 	    while (sensorFlag)
 			try {
-    			  Thread.sleep(30000);
+    			  Thread.sleep(60000);
 				sense ();
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
@@ -79,7 +79,7 @@ public class SensorDataSet extends Thread {
 			        is.close();
 			    }
 			}*/
-			DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+			DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmm");
 			   //get current date time with Date()
 			   Date date = new Date();
 			   //System.out.println(dateFormat.format(date));

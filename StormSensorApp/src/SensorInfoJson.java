@@ -33,14 +33,15 @@ public class SensorInfoJson extends Thread {
 
 	FileReader fileReader;
 	FileReader topologyReader;
-	String[] tokens =new String[10000];
-	String[] filteredTokens =new String[16];
-	String[] sensorsIds = {"N-H563T",	"N-QWNZH",	"N-LETTK",	"N-SCK04",	"N-8HOVD",	"N-2GWON",	"N-UFCUA",	"N-6PFYW",	"N-TZD20",	"N-WRYAZ",	"N-3IK0Y",	"N-JQ338",	"N-Y47X6",	"N-2Z2WK",	"N-GRDHN",	"N-L04BJ"};
-	String[] finalAddedTokens =new String[16];
-	String[] topologyRows =new String[16];
+	String[] tokens =new String[100000];
+	String[] filteredTokens =new String[1600];
+	String[] sensorsIds = new String[1600];
+	String[] finalAddedTokens =new String[1600];
+	String[] topologyRows =new String[1600];
 
 	
-	int[][] coOrdinates = new int[][]{
+	int[][] coOrdinates = new int[1600][2];
+	/*{
 			{100, 400},
 			{200, 400},
 			{300, 400},
@@ -57,7 +58,7 @@ public class SensorInfoJson extends Thread {
 			{200, 100},
 			{300, 100},
 			{400, 100}
-	};
+	};*/
 	int countLines=0;
 	int countFilterLines =0;
 	int topologyLines = 0;
@@ -67,8 +68,25 @@ public class SensorInfoJson extends Thread {
 	Date myClock = new Date();
     boolean sensorFlag = true;
     private int sensId;
-    int[][] topoFromFile= new int[16][16];
+    int[][] topoFromFile= new int[1600][1600];
     
+    SensorInfoJson(String[] sensorsIds) {
+    	this.sensorsIds = sensorsIds;
+    	int y=20;
+    	int x = 20;
+    	for(int i=0; i<1600; i+=40){
+    		x = 20;
+    		for(int j =0; j<40;j++){
+    		  		coOrdinates[i + j][0]= x;
+    		  		coOrdinates[i + j][1]= y;
+    		  		x = x+ 20;
+    		}
+    		y = y + 20;
+    	}
+    	
+    	
+    	
+    }
    
   public void run (){
 
@@ -102,9 +120,9 @@ public class SensorInfoJson extends Thread {
 	 FileInputStream in=null;
       String str = "";
       String sentence="";
-  	  finalAddedTokens =new String[16];
-  	  tokens =new String[10000];
-	  filteredTokens =new String[16];
+  	  finalAddedTokens =new String[1600];
+  	  tokens =new String[100000];
+	  filteredTokens =new String[1600];
 	  countLines=0;
 	  countFilterLines =0;
 	  topologyLines = 0;
@@ -116,23 +134,23 @@ public class SensorInfoJson extends Thread {
     	  Scanner inputStream = null;
 			try
 			{
-			  inputStream = new Scanner(new File("/home/simpal/stormSensorReco/SensorSimulation/SensorSimulations/StormSensorApp/topologyInformation.txt"));//The txt file is being read correctly.
+			  inputStream = new Scanner(new File("/home/simpal/stormSensorReco/SensorSimulation/SensorSimulations/StormSensorApp/tempTopoFile.txt"));//The txt file is being read correctly.
 			}
 			catch(FileNotFoundException e)
 			{
 			  System.exit(0);
 			}
             
-			for (int row = 0; row < 16; row++) {
+			for (int row = 0; row < 1600; row++) {
 			    String line = inputStream.nextLine();
 			    String[] lineValues = line.split(",");
-			  for (int column = 0; column < 16; column++) {
+			  for (int column = 0; column < 1600; column++) {
 			    topoFromFile[row][column] = Integer.parseInt(lineValues[column]);
 			  }
 			}
 			inputStream.close();
-          	for(int i=0; i<16; i++){
-      			for(int j=0; j<16; j++){
+          	for(int i=0; i<1600; i++){
+      			for(int j=0; j<1600; j++){
       				if(topoFromFile[i][j]==1){
       					JsonObject jsonObjectLink = Json.createObjectBuilder()
       		        			.add("source", i)
@@ -152,16 +170,16 @@ public class SensorInfoJson extends Thread {
   		}
       	if(tokens[0]!=null){
           	String[] senseVal = tokens[countLines-1].split(",");
-      		String lastTimestamp = senseVal[3];
+      		String lastTimestamp = senseVal[2];
       		for(int i=countLines-1;i>=0;i--){
               	String word = tokens[i];
               	String[] sensorVal = word.split(",");
                   word = word.trim();
-                  if(!word.isEmpty() && sensorVal[3].contentEquals(lastTimestamp)){
+                  if(!word.isEmpty() && sensorVal[2].contentEquals(lastTimestamp)){
                   	Boolean foundItem = false;
                   	for(int j=0;j<countFilterLines;j++){
                       	String[] sensorCurrentVal = filteredTokens[j].split(",");
-                  		if(sensorCurrentVal[1].contains(sensorVal[1])){
+                  		if(sensorCurrentVal[0].contains(sensorVal[0])){
                   			foundItem = true;
                   		break;
                   		}
@@ -171,20 +189,20 @@ public class SensorInfoJson extends Thread {
                   }
               }
       	}
-        for(int k=0; k<16; k++){
+        for(int k=0; k<1600; k++){
         	Boolean foundSensor= false;
         	String findSensor = sensorsIds[k];
         	for(int l=0; l<countFilterLines; l++)
         		{
               	String[] sensorCurrentVal = filteredTokens[l].split(",");
-        		if(findSensor.contentEquals(sensorCurrentVal[1])){
+        		if(findSensor.contentEquals(sensorCurrentVal[0])){
         			finalAddedTokens[k]= filteredTokens[l];
         			foundSensor= true;
         			break;
         		}
         		}
         	if(foundSensor== false)
-        		finalAddedTokens[k] = "noGroup," + sensorsIds[k] + ",no data,notimestamp,noValue";
+        		finalAddedTokens[k] = sensorsIds[k] + ",no data,notimestamp,noValue";
         }      	
       	/*if(filteredTokens[0] !=null){
       	Arrays.sort(filteredTokens, new Comparator<String>() {
@@ -201,14 +219,14 @@ public class SensorInfoJson extends Thread {
 
     	JsonArrayBuilder jsonArrayBuild= Json.createArrayBuilder();
 
-        for(int i=0;i<16;i++){
+        for(int i=0;i<1600;i++){
           	String word = finalAddedTokens[i];
           	String[] senseVal = word.split(",");
               word = word.trim();
               if(!word.isEmpty()){
               	JsonObject jsonObject1 = Json.createObjectBuilder()
-              			.add("sensorId", senseVal[1])
-              			.add("group", senseVal[4])
+              			.add("sensorId", senseVal[0])
+              			.add("group", senseVal[3])
               			.add("x", coOrdinates[i][0] )
               			.add("y", coOrdinates[i][1])
               			.add("fixed", true)

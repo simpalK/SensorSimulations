@@ -2,8 +2,11 @@ import static java.lang.System.out;
 
 import java.lang.Number;
 import java.math.BigDecimal;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
+import java.io.Reader;
 import java.lang.reflect.Array;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
@@ -32,28 +35,31 @@ public class StartSensors {
 
 
 	public static void main(String[] args) {
-		String[] sensorsIds = {"N-H563T",	"N-QWNZH",	"N-LETTK",	"N-SCK04",	"N-8HOVD",	"N-2GWON",	"N-UFCUA",	"N-6PFYW",	"N-TZD20",	"N-WRYAZ",	"N-3IK0Y",	"N-JQ338",	"N-Y47X6",	"N-2Z2WK",	"N-GRDHN",	"N-L04BJ"};
-        for(int i=0; i<4;i++){
+		try {
+            FileReader fr = new FileReader((args.length > 0) ? args[0] : "nodes_test.csv");
+            String[] sensorsIds = parseCsv(fr, ",", true);
+		
+		//String[] sensorsIds = {"N-H563T",	"N-QWNZH",	"N-LETTK",	"N-SCK04",	"N-8HOVD",	"N-2GWON",	"N-UFCUA",	"N-6PFYW",	"N-TZD20",	"N-WRYAZ",	"N-3IK0Y",	"N-JQ338",	"N-Y47X6",	"N-2Z2WK",	"N-GRDHN",	"N-L04BJ"};
+        for(int i=0; i<400;i++){
 		SensorDataSet sensorStart = new SensorDataSet (sensorsIds[i], file1);
 	     sensorStart.start ();
 	     }
-        for(int i=4; i<8;i++){
+        for(int i=400; i<800;i++){
     		SensorDataSet sensorStart = new SensorDataSet (sensorsIds[i], file2);
     	     sensorStart.start ();
     	     }
-        for(int i=8; i<12;i++){
+        for(int i=800; i<1200;i++){
     		SensorDataSet sensorStart = new SensorDataSet (sensorsIds[i], file3);
     	     sensorStart.start ();
     	     }
-        for(int i=12; i<16;i++){
+        for(int i=1200; i<1600; i++){
     		SensorDataSet sensorStart = new SensorDataSet (sensorsIds[i], file4);
     	     sensorStart.start ();
-    	     }
-	     	     
+        }
 	    // SensorInfoJson sensorJsonInfo = new SensorInfoJson();
 	     //sensorJsonInfo.start ();
          while(true){
-        	 SensorInfoJson sensorJsonInfo = new SensorInfoJson();
+        	 SensorInfoJson sensorJsonInfo = new SensorInfoJson(sensorsIds);
     	     sensorJsonInfo.start ();
          try {
 			TimeUnit.SECONDS.sleep(100);
@@ -61,10 +67,42 @@ public class StartSensors {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
-         }
+		}  }  
+		} catch (IOException e) {
+           e.printStackTrace();
+       }
 	     
 	}
+		
+		
+		public static String[] parseCsv(Reader reader, String separator, boolean hasHeader) throws IOException {
+	        //Map<String, List<String>> values = new LinkedHashMap<String, List<String>>();
+	        List<String> columnNames = new LinkedList<String>();
+	        String[] nodesInfo = new String[1600];
+	        int nodeCount=0;
+	        BufferedReader br = null;
+	        br = new BufferedReader(reader);
+	        String line;
+	        int numLines = 0;
+	        while ((line = br.readLine()) != null) {
+	                if (!line.startsWith("#")) {
+	                    String[] tokens = line.split(separator);
+	                    if (tokens != null) {
+	                            if (numLines == 0) {
+	                                for (int i = 0; i < tokens.length; ++i) {
+
+	                                columnNames.add(hasHeader ? tokens[i] : ("row_"+i));
+	                                }
+	                            } else {
+	                               nodesInfo[nodeCount++]=  tokens[0];                            
+	                            }
+	                        
+	                    }
+	                    ++numLines;                
+	            }
+	        }
+	        return nodesInfo;
+	    }	
 	/*public static String lastNlines( File file, int lines) {
 	    java.io.RandomAccessFile fileHandler = null;
 	    try {

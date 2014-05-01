@@ -34,7 +34,7 @@ public void run () {
 	// if file doesnt exists, then create it
 	if (fileSense.exists()) {
 		try {
-		InputStream is = new BufferedInputStream(new FileInputStream("logDataSensor.txt"));
+		InputStream is = new BufferedInputStream(new FileInputStream(Global.filesPath + "logDataSensor.txt"));
 		
 	        byte[] c = new byte[1024];
 	        int count = 0;

@@ -19,14 +19,15 @@ public class CsvParser {
 
     public static void main(String[] args) {
         try {
-            FileReader fr = new FileReader((args.length > 0) ? args[0] : "nodes_test.csv");
+            FileReader fr = new FileReader(Global.filesPath + "nodes_test.csv");
             String[] nodesInfo = parseCsv(fr, ",", true);
-            FileReader fr1 = new FileReader("edges_test.csv");
+            FileReader fr1 = new FileReader(Global.filesPath + "edges_test.csv");
             String[] edgesInfo = parseCsvEdges(fr1, "\\t", true);
-            File file = new File("tempTopoFile.txt");
+            File file = new File(Global.filesPath + "tempTopoFile.txt");
+			Global.numberOfNodes = (Integer.parseInt(args[1]));
 
-            for(int i=0;i<1600;i++){
-            	for(int j=0; j<1600; j++)
+            for(int i=0;i<Global.numberOfNodes;i++){
+            	for(int j=0; j<Global.numberOfNodes; j++)
             		if(i==j)
             			tempTopo[i][j] = 1;
             		else
@@ -37,9 +38,9 @@ public class CsvParser {
             FileWriter fw = new FileWriter(file.getAbsoluteFile(),true);
 			BufferedWriter bw = new BufferedWriter(fw);
 			
-            for(int i=0;i<1600;i++){
+            for(int i=0;i<Global.numberOfNodes;i++){
             	String value ="";
-            	for(int j=0; j<1600; j++){
+            	for(int j=0; j<Global.numberOfNodes; j++){
             		value += tempTopo[i][j] + ",";
                     System.out.print(tempTopo[i][j] + ",");
                     }
@@ -50,7 +51,7 @@ public class CsvParser {
 			bw.close();
 
             //Map<String, List<String>> values = parseCsv(fr, ",", true);
-            for(int i =0;i<1600;i++)
+            for(int i =0;i<Global.numberOfNodes;i++)
             System.out.println(nodesInfo[i]);
             
             
@@ -61,7 +62,7 @@ public class CsvParser {
     public static String[] parseCsvEdges(Reader reader, String separator, boolean hasHeader) throws IOException {
         //Map<String, List<String>> values = new LinkedHashMap<String, List<String>>();
         List<String> columnNames = new LinkedList<String>();
-        String[] nodesInfo = new String[16000];
+        String[] nodesInfo = new String[Global.numberOfNodes * 10];
         int nodeCount=0;
         BufferedReader br = null;
         br = new BufferedReader(reader);
@@ -91,7 +92,7 @@ public class CsvParser {
     public static String[] parseCsv(Reader reader, String separator, boolean hasHeader) throws IOException {
         //Map<String, List<String>> values = new LinkedHashMap<String, List<String>>();
         List<String> columnNames = new LinkedList<String>();
-        String[] nodesInfo = new String[1600];
+        String[] nodesInfo = new String[Global.numberOfNodes];
         int nodeCount=0;
         BufferedReader br = null;
         br = new BufferedReader(reader);
@@ -118,7 +119,7 @@ public class CsvParser {
     }
     
     public static void findMapTopo(String[] nodesInfo, String[] edgesInfo) {
-    	for(int i=0;i<1600;i++)
+    	for(int i=0;i<Global.numberOfNodes;i++)
     	{
     		String insertNode = nodesInfo[i];
     		for(int j =0; j<edgesRows; j++)
@@ -133,7 +134,7 @@ public class CsvParser {
 		
     }
 	private static void insertPositionNodeNeighbor(int node, String neighbor, String[] nodes) {
-		for(int i=0; i<1600; i++)
+		for(int i=0; i<Global.numberOfNodes; i++)
 			if(nodes[i].contentEquals(neighbor)){
 				tempTopo[node][i] = 1;
 				tempTopo[i][node] = 1;

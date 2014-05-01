@@ -1,0 +1,1099 @@
+2014-03-22 06:54:46 ZooKeeper [INFO] Client environment:zookeeper.version=3.3.3-1073969, built on 02/23/2011 22:27 GMT
+2014-03-22 06:54:46 ZooKeeper [INFO] Client environment:host.name=simpal-Aspire-7750G
+2014-03-22 06:54:46 ZooKeeper [INFO] Client environment:java.version=1.7.0_21
+2014-03-22 06:54:46 ZooKeeper [INFO] Client environment:java.vendor=Oracle Corporation
+2014-03-22 06:54:46 ZooKeeper [INFO] Client environment:java.home=/usr/lib/jvm/java-7-openjdk-amd64/jre
+2014-03-22 06:54:46 ZooKeeper [INFO] Client environment:java.class.path=/home/simpal/storm-0.8.2/storm-0.8.2.jar:/home/simpal/storm-0.8.2/lib/tools.macro-0.1.0.jar:/home/simpal/storm-0.8.2/lib/commons-logging-1.1.1.jar:/home/simpal/storm-0.8.2/lib/ring-jetty-adapter-0.3.11.jar:/home/simpal/storm-0.8.2/lib/jline-0.9.94.jar:/home/simpal/storm-0.8.2/lib/commons-exec-1.1.jar:/home/simpal/storm-0.8.2/lib/commons-fileupload-1.2.1.jar:/home/simpal/storm-0.8.2/lib/junit-3.8.1.jar:/home/simpal/storm-0.8.2/lib/httpclient-4.1.1.jar:/home/simpal/storm-0.8.2/lib/snakeyaml-1.9.jar:/home/simpal/storm-0.8.2/lib/clj-time-0.4.1.jar:/home/simpal/storm-0.8.2/lib/curator-client-1.0.1.jar:/home/simpal/storm-0.8.2/lib/objenesis-1.2.jar:/home/simpal/storm-0.8.2/lib/asm-4.0.jar:/home/simpal/storm-0.8.2/lib/servlet-api-2.5.jar:/home/simpal/storm-0.8.2/lib/httpcore-4.1.jar:/home/simpal/storm-0.8.2/lib/tools.logging-0.2.3.jar:/home/simpal/storm-0.8.2/lib/clout-1.0.1.jar:/home/simpal/storm-0.8.2/lib/ring-servlet-0.3.11.jar:/home/simpal/storm-0.8.2/lib/guava-13.0.jar:/home/simpal/storm-0.8.2/lib/disruptor-2.10.1.jar:/home/simpal/storm-0.8.2/lib/minlog-1.2.jar:/home/simpal/storm-0.8.2/lib/reflectasm-1.07-shaded.jar:/home/simpal/storm-0.8.2/lib/jgrapht-0.8.3.jar:/home/simpal/storm-0.8.2/lib/commons-codec-1.4.jar:/home/simpal/storm-0.8.2/lib/slf4j-api-1.5.8.jar:/home/simpal/storm-0.8.2/lib/commons-io-1.4.jar:/home/simpal/storm-0.8.2/lib/tools.cli-0.2.2.jar:/home/simpal/storm-0.8.2/lib/joda-time-2.0.jar:/home/simpal/storm-0.8.2/lib/jetty-6.1.26.jar:/home/simpal/storm-0.8.2/lib/log4j-1.2.16.jar:/home/simpal/storm-0.8.2/lib/servlet-api-2.5-20081211.jar:/home/simpal/storm-0.8.2/lib/commons-lang-2.5.jar:/home/simpal/storm-0.8.2/lib/jzmq-2.1.0.jar:/home/simpal/storm-0.8.2/lib/ring-core-1.1.5.jar:/home/simpal/storm-0.8.2/lib/json-simple-1.1.jar:/home/simpal/storm-0.8.2/lib/kryo-2.17.jar:/home/simpal/storm-0.8.2/lib/math.numeric-tower-0.0.1.jar:/home/simpal/storm-0.8.2/lib/jetty-util-6.1.26.jar:/home/simpal/storm-0.8.2/lib/compojure-1.1.3.jar:/home/simpal/storm-0.8.2/lib/carbonite-1.5.0.jar:/home/simpal/storm-0.8.2/lib/zookeeper-3.3.3.jar:/home/simpal/storm-0.8.2/lib/slf4j-log4j12-1.5.8.jar:/home/simpal/storm-0.8.2/lib/core.incubator-0.1.0.jar:/home/simpal/storm-0.8.2/lib/clojure-1.4.0.jar:/home/simpal/storm-0.8.2/lib/hiccup-0.3.6.jar:/home/simpal/storm-0.8.2/lib/curator-framework-1.0.1.jar:/home/simpal/storm-0.8.2/lib/libthrift7-0.7.0.jar:/home/simpal/storm-0.8.2/log4j:/home/simpal/storm-0.8.2/conf:/tmp//supervisor/stormdist/SensorLISATopologyTest145_9-1-1395467668/stormjar.jar
+2014-03-22 06:54:46 ZooKeeper [INFO] Client environment:java.library.path=/usr/local/lib/
+2014-03-22 06:54:46 ZooKeeper [INFO] Client environment:java.io.tmpdir=/tmp
+2014-03-22 06:54:46 ZooKeeper [INFO] Client environment:java.compiler=<NA>
+2014-03-22 06:54:46 ZooKeeper [INFO] Client environment:os.name=Linux
+2014-03-22 06:54:46 ZooKeeper [INFO] Client environment:os.arch=amd64
+2014-03-22 06:54:46 ZooKeeper [INFO] Client environment:os.version=3.8.0-25-generic
+2014-03-22 06:54:46 ZooKeeper [INFO] Client environment:user.name=root
+2014-03-22 06:54:46 ZooKeeper [INFO] Client environment:user.home=/root
+2014-03-22 06:54:46 ZooKeeper [INFO] Client environment:user.dir=/home/simpal/storm-0.8.2/bin
+2014-03-22 06:54:46 ZooKeeperServer [INFO] Server environment:zookeeper.version=3.3.3-1073969, built on 02/23/2011 22:27 GMT
+2014-03-22 06:54:46 ZooKeeperServer [INFO] Server environment:host.name=simpal-Aspire-7750G
+2014-03-22 06:54:46 ZooKeeperServer [INFO] Server environment:java.version=1.7.0_21
+2014-03-22 06:54:46 ZooKeeperServer [INFO] Server environment:java.vendor=Oracle Corporation
+2014-03-22 06:54:46 ZooKeeperServer [INFO] Server environment:java.home=/usr/lib/jvm/java-7-openjdk-amd64/jre
+2014-03-22 06:54:46 ZooKeeperServer [INFO] Server environment:java.class.path=/home/simpal/storm-0.8.2/storm-0.8.2.jar:/home/simpal/storm-0.8.2/lib/tools.macro-0.1.0.jar:/home/simpal/storm-0.8.2/lib/commons-logging-1.1.1.jar:/home/simpal/storm-0.8.2/lib/ring-jetty-adapter-0.3.11.jar:/home/simpal/storm-0.8.2/lib/jline-0.9.94.jar:/home/simpal/storm-0.8.2/lib/commons-exec-1.1.jar:/home/simpal/storm-0.8.2/lib/commons-fileupload-1.2.1.jar:/home/simpal/storm-0.8.2/lib/junit-3.8.1.jar:/home/simpal/storm-0.8.2/lib/httpclient-4.1.1.jar:/home/simpal/storm-0.8.2/lib/snakeyaml-1.9.jar:/home/simpal/storm-0.8.2/lib/clj-time-0.4.1.jar:/home/simpal/storm-0.8.2/lib/curator-client-1.0.1.jar:/home/simpal/storm-0.8.2/lib/objenesis-1.2.jar:/home/simpal/storm-0.8.2/lib/asm-4.0.jar:/home/simpal/storm-0.8.2/lib/servlet-api-2.5.jar:/home/simpal/storm-0.8.2/lib/httpcore-4.1.jar:/home/simpal/storm-0.8.2/lib/tools.logging-0.2.3.jar:/home/simpal/storm-0.8.2/lib/clout-1.0.1.jar:/home/simpal/storm-0.8.2/lib/ring-servlet-0.3.11.jar:/home/simpal/storm-0.8.2/lib/guava-13.0.jar:/home/simpal/storm-0.8.2/lib/disruptor-2.10.1.jar:/home/simpal/storm-0.8.2/lib/minlog-1.2.jar:/home/simpal/storm-0.8.2/lib/reflectasm-1.07-shaded.jar:/home/simpal/storm-0.8.2/lib/jgrapht-0.8.3.jar:/home/simpal/storm-0.8.2/lib/commons-codec-1.4.jar:/home/simpal/storm-0.8.2/lib/slf4j-api-1.5.8.jar:/home/simpal/storm-0.8.2/lib/commons-io-1.4.jar:/home/simpal/storm-0.8.2/lib/tools.cli-0.2.2.jar:/home/simpal/storm-0.8.2/lib/joda-time-2.0.jar:/home/simpal/storm-0.8.2/lib/jetty-6.1.26.jar:/home/simpal/storm-0.8.2/lib/log4j-1.2.16.jar:/home/simpal/storm-0.8.2/lib/servlet-api-2.5-20081211.jar:/home/simpal/storm-0.8.2/lib/commons-lang-2.5.jar:/home/simpal/storm-0.8.2/lib/jzmq-2.1.0.jar:/home/simpal/storm-0.8.2/lib/ring-core-1.1.5.jar:/home/simpal/storm-0.8.2/lib/json-simple-1.1.jar:/home/simpal/storm-0.8.2/lib/kryo-2.17.jar:/home/simpal/storm-0.8.2/lib/math.numeric-tower-0.0.1.jar:/home/simpal/storm-0.8.2/lib/jetty-util-6.1.26.jar:/home/simpal/storm-0.8.2/lib/compojure-1.1.3.jar:/home/simpal/storm-0.8.2/lib/carbonite-1.5.0.jar:/home/simpal/storm-0.8.2/lib/zookeeper-3.3.3.jar:/home/simpal/storm-0.8.2/lib/slf4j-log4j12-1.5.8.jar:/home/simpal/storm-0.8.2/lib/core.incubator-0.1.0.jar:/home/simpal/storm-0.8.2/lib/clojure-1.4.0.jar:/home/simpal/storm-0.8.2/lib/hiccup-0.3.6.jar:/home/simpal/storm-0.8.2/lib/curator-framework-1.0.1.jar:/home/simpal/storm-0.8.2/lib/libthrift7-0.7.0.jar:/home/simpal/storm-0.8.2/log4j:/home/simpal/storm-0.8.2/conf:/tmp//supervisor/stormdist/SensorLISATopologyTest145_9-1-1395467668/stormjar.jar
+2014-03-22 06:54:46 ZooKeeperServer [INFO] Server environment:java.library.path=/usr/local/lib/
+2014-03-22 06:54:46 ZooKeeperServer [INFO] Server environment:java.io.tmpdir=/tmp
+2014-03-22 06:54:46 ZooKeeperServer [INFO] Server environment:java.compiler=<NA>
+2014-03-22 06:54:46 ZooKeeperServer [INFO] Server environment:os.name=Linux
+2014-03-22 06:54:46 ZooKeeperServer [INFO] Server environment:os.arch=amd64
+2014-03-22 06:54:46 ZooKeeperServer [INFO] Server environment:os.version=3.8.0-25-generic
+2014-03-22 06:54:46 ZooKeeperServer [INFO] Server environment:user.name=root
+2014-03-22 06:54:46 ZooKeeperServer [INFO] Server environment:user.home=/root
+2014-03-22 06:54:46 ZooKeeperServer [INFO] Server environment:user.dir=/home/simpal/storm-0.8.2/bin
+2014-03-22 06:54:48 worker [INFO] Launching worker for SensorLISATopologyTest145_9-1-1395467668 on 8370dd5b-3fb3-4feb-85df-c2ba6c53c1c6:6703 with id db7b0127-223d-4509-ba91-60fe5f184252 and conf {"dev.zookeeper.path" "/tmp/dev-storm-zookeeper", "topology.tick.tuple.freq.secs" nil, "topology.fall.back.on.java.serialization" true, "topology.max.error.report.per.interval" 5, "zmq.linger.millis" 5000, "topology.skip.missing.kryo.registrations" false, "ui.childopts" "-Xmx768m", "storm.zookeeper.session.timeout" 20000, "nimbus.reassign" true, "topology.trident.batch.emit.interval.millis" 500, "nimbus.monitor.freq.secs" 10, "java.library.path" "/usr/local/lib/", "topology.executor.send.buffer.size" 1024, "storm.local.dir" "/tmp/", "supervisor.worker.start.timeout.secs" 240, "topology.enable.message.timeouts" true, "nimbus.cleanup.inbox.freq.secs" 600, "nimbus.inbox.jar.expiration.secs" 3600, "drpc.worker.threads" 64, "topology.worker.shared.thread.pool.size" 4, "nimbus.host" "localhost", "storm.zookeeper.port" 2181, "transactional.zookeeper.port" nil, "topology.executor.receive.buffer.size" 1024, "transactional.zookeeper.servers" nil, "storm.zookeeper.root" "/storm", "supervisor.enable" true, "storm.zookeeper.servers" ["134.21.245.67" "134.21.73.201" "134.21.73.210"], "transactional.zookeeper.root" "/transactional", "topology.acker.executors" 1, "topology.transfer.buffer.size" 1024, "topology.worker.childopts" nil, "drpc.queue.size" 128, "worker.childopts" "-Xmx768m", "supervisor.heartbeat.frequency.secs" 5, "topology.error.throttle.interval.secs" 10, "zmq.hwm" 0, "drpc.port" 3772, "supervisor.monitor.frequency.secs" 3, "topology.receiver.buffer.size" 8, "task.heartbeat.frequency.secs" 3, "topology.tasks" nil, "topology.spout.wait.strategy" "backtype.storm.spout.SleepSpoutWaitStrategy", "topology.max.spout.pending" nil, "storm.zookeeper.retry.interval" 1000, "topology.sleep.spout.wait.strategy.time.ms" 1, "nimbus.topology.validator" "backtype.storm.nimbus.DefaultTopologyValidator", "supervisor.slots.ports" [6700 6701 6702 6703], "topology.debug" false, "nimbus.task.launch.secs" 240, "nimbus.supervisor.timeout.secs" 60, "topology.message.timeout.secs" 30, "task.refresh.poll.secs" 10, "topology.workers" 1, "supervisor.childopts" "-Xmx256m", "nimbus.thrift.port" 6627, "topology.stats.sample.rate" 0.05, "worker.heartbeat.frequency.secs" 1, "topology.acker.tasks" nil, "topology.disruptor.wait.strategy" "com.lmax.disruptor.BlockingWaitStrategy", "nimbus.task.timeout.secs" 30, "storm.zookeeper.connection.timeout" 15000, "topology.kryo.factory" "backtype.storm.serialization.DefaultKryoFactory", "drpc.invocations.port" 3773, "zmq.threads" 1, "storm.zookeeper.retry.times" 5, "topology.state.synchronization.timeout.secs" 60, "supervisor.worker.timeout.secs" 240, "nimbus.file.copy.expiration.secs" 600, "drpc.request.timeout.secs" 600, "storm.local.mode.zmq" false, "ui.port" 8080, "nimbus.childopts" "-Xmx1024m", "storm.cluster.mode" "distributed", "topology.optimize" true, "topology.max.task.parallelism" nil}
+2014-03-22 06:54:48 CuratorFrameworkImpl [INFO] Starting
+2014-03-22 06:54:48 ZooKeeper [INFO] Initiating client connection, connectString=134.21.245.67:2181,134.21.73.201:2181,134.21.73.210:2181 sessionTimeout=20000 watcher=com.netflix.curator.ConnectionState@13fbf741
+2014-03-22 06:54:48 ClientCnxn [INFO] Opening socket connection to server /134.21.245.67:2181
+2014-03-22 06:54:55 ClientCnxn [INFO] Client session timed out, have not heard from server in 6735ms for sessionid 0x0, closing socket connection and attempting reconnect
+2014-03-22 06:54:56 ClientCnxn [INFO] Opening socket connection to server /134.21.73.201:2181
+2014-03-22 06:54:56 ClientCnxn [INFO] Socket connection established to zoo2/134.21.73.201:2181, initiating session
+2014-03-22 06:54:56 ClientCnxn [INFO] Session establishment complete on server zoo2/134.21.73.201:2181, sessionid = 0x144da60c98f203e, negotiated timeout = 20000
+2014-03-22 06:54:56 zookeeper [INFO] Zookeeper state update: :connected:none
+2014-03-22 06:54:56 ZooKeeper [INFO] Session: 0x144da60c98f203e closed
+2014-03-22 06:54:56 ClientCnxn [INFO] EventThread shut down
+2014-03-22 06:54:56 CuratorFrameworkImpl [INFO] Starting
+2014-03-22 06:54:56 ZooKeeper [INFO] Initiating client connection, connectString=134.21.245.67:2181,134.21.73.201:2181,134.21.73.210:2181/storm sessionTimeout=20000 watcher=com.netflix.curator.ConnectionState@13f287e8
+2014-03-22 06:54:56 ClientCnxn [INFO] Opening socket connection to server /134.21.73.201:2181
+2014-03-22 06:54:56 ClientCnxn [INFO] Socket connection established to zoo2/134.21.73.201:2181, initiating session
+2014-03-22 06:54:56 ClientCnxn [INFO] Session establishment complete on server zoo2/134.21.73.201:2181, sessionid = 0x144da60c98f2040, negotiated timeout = 20000
+2014-03-22 06:54:59 executor [INFO] Loading executor SensorBolt2:[4 4]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorBolt2 __system ["startup"]
+2014-03-22 06:54:59 executor [INFO] Loaded executor tasks SensorBolt2:[4 4]
+2014-03-22 06:54:59 executor [INFO] Finished loading executor SensorBolt2:[4 4]
+2014-03-22 06:54:59 executor [INFO] Preparing bolt SensorBolt2:(4)
+2014-03-22 06:54:59 executor [INFO] Prepared bolt SensorBolt2:(4)
+2014-03-22 06:54:59 executor [INFO] Loading executor SensorEmitter:[7 7]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorEmitter __system ["startup"]
+2014-03-22 06:54:59 executor [INFO] Loaded executor tasks SensorEmitter:[7 7]
+2014-03-22 06:54:59 executor [INFO] Opening spout SensorEmitter:(7)
+2014-03-22 06:54:59 executor [INFO] Finished loading executor SensorEmitter:[7 7]
+2014-03-22 06:54:59 executor [INFO] Opened spout SensorEmitter:(7)
+2014-03-22 06:54:59 executor [INFO] Activating spout SensorEmitter:(7)
+2014-03-22 06:54:59 task [INFO] Emitting: SensorEmitter default [N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorEmitter __ack_init [-3931984190665694082 -6544950684489551912 7]
+2014-03-22 06:54:59 executor [INFO] Loading executor SensorGetter:[10 10]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __system ["startup"]
+2014-03-22 06:54:59 executor [INFO] Loaded executor tasks SensorGetter:[10 10]
+2014-03-22 06:54:59 executor [INFO] Finished loading executor SensorGetter:[10 10]
+2014-03-22 06:54:59 executor [INFO] Preparing bolt SensorGetter:(10)
+2014-03-22 06:54:59 executor [INFO] Prepared bolt SensorGetter:(10)
+2014-03-22 06:54:59 executor [INFO] Processing received message source: SensorEmitter:7, stream: default, id: {-3931984190665694082=1664834529316520000}, [N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter default [0010011100000000, N-UFCUA,-0.29114990842834665,201403220638:N-2GWON,0.4679762929576685,201403220638:N-LETTK,0.6937018920545661,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0010011100000000, N-UFCUA,-0.29114990842834665,201403220638:N-2GWON,0.4679762929576685,201403220638:N-LETTK,0.6937018920545661,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __ack_ack [-3931984190665694082 1664834529316520000]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter default [0000000000000011, N-GRDHN,-0.6064382206996778,201403220638:N-L04BJ,1.7006766970342815,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: 0.4679762929576685
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __ack_ack [-3931984190665694082 1664834529316520000]
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: 0.6937018920545661
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: -1.1260429155929481
+2014-03-22 06:54:59 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:54:59 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:54:59 STDIO [INFO] Number of Neighbors: 3
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter default [0000011001000000, N-2GWON,0.4679762929576685,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 STDIO [INFO] Bolt Information for node: N-UFCUA,-0.29114990842834665,201403220638Va: -0.29114990842834665LISA Value:-3.130264100660589E-4
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __ack_ack [-3931984190665694082 1664834529316520000]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorBolt2 default [N-UFCUA,-0.29114990842834665,201403220638, -3.130264100660589E-4]
+2014-03-22 06:54:59 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000000011, N-GRDHN,-0.6064382206996778,201403220638:N-L04BJ,1.7006766970342815,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter default [1000100000000000, N-8HOVD,-0.03721706389113577,201403220638:N-H563T,-0.28234801313940555,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: 1.7006766970342815
+2014-03-22 06:54:59 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __ack_ack [-3931984190665694082 1664834529316520000]
+2014-03-22 06:54:59 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:54:59 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:54:59 STDIO [INFO] Bolt Information for node: N-GRDHN,-0.6064382206996778,201403220638Va: -0.6064382206996778LISA Value:-0.8193617080803245
+2014-03-22 06:54:59 task [INFO] Emitting: SensorBolt2 default [N-GRDHN,-0.6064382206996778,201403220638, -0.8193617080803245]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter default [0000000000010011, N-L04BJ,1.7006766970342815,201403220638:N-GRDHN,-0.6064382206996778,201403220638:N-JQ338,1.2224799134564661,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __ack_ack [-3931984190665694082 1664834529316520000]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter default [0000000001001100, N-2Z2WK,-1.7314405156807104,201403220638:N-Y47X6,-1.2943457455969938,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __ack_ack [-3931984190665694082 1664834529316520000]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter default [0000000001110000, N-3IK0Y,2.075062411609478,201403220638:N-JQ338,1.2224799134564661,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __ack_ack [-3931984190665694082 1664834529316520000]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter default [0000000000001100, N-Y47X6,-1.2943457455969938,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000001100, N-Y47X6,-1.2943457455969938,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __ack_ack [-3931984190665694082 1664834529316520000]
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: -1.7314405156807104
+2014-03-22 06:54:59 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:54:59 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter default [0000000000110001, N-JQ338,1.2224799134564661,201403220638:N-L04BJ,1.7006766970342815,201403220638:N-3IK0Y,2.075062411609478,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:54:59 STDIO [INFO] Bolt Information for node: N-Y47X6,-1.2943457455969938,201403220638Va: -1.2943457455969938LISA Value:1.7860853571368753
+2014-03-22 06:54:59 task [INFO] Emitting: SensorBolt2 default [N-Y47X6,-1.2943457455969938,201403220638, 1.7860853571368753]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __ack_ack [-3931984190665694082 1664834529316520000]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter default [0001000100000000, N-SCK04,-0.17732269034052123,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __ack_ack [-3931984190665694082 1664834529316520000]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter default [1110000000000000, N-QWNZH,-0.1642343179055442,201403220638:N-LETTK,0.6937018920545661,201403220638:N-H563T,-0.28234801313940555,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __ack_ack [-3931984190665694082 1664834529316520000]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter default [0110001000000000, N-LETTK,0.6937018920545661,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-QWNZH,-0.1642343179055442,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __ack_ack [-3931984190665694082 1664834529316520000]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter default [1100100000000000, N-H563T,-0.28234801313940555,201403220638:N-8HOVD,-0.03721706389113577,201403220638:N-QWNZH,-0.1642343179055442,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __ack_ack [-3931984190665694082 1664834529316520000]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter default [0000010011100100, N-WRYAZ,1.1042102924152977,201403220638:N-2GWON,0.4679762929576685,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:N-3IK0Y,2.075062411609478,201403220638:N-TZD20,-1.3951983464003903,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __ack_ack [-3931984190665694082 1664834529316520000]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter default [0000000011000000, N-TZD20,-1.3951983464003903,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __ack_ack [-3931984190665694082 1664834529316520000]
+2014-03-22 06:54:59 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000011000000, N-TZD20,-1.3951983464003903,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:54:59 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter default [0001000100000000, N-6PFYW,-1.1260429155929481,201403220638:N-SCK04,-0.17732269034052123,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:54:59 task [INFO] Emitting: SensorGetter __ack_ack [-3931984190665694082 1664834529316520000]
+2014-03-22 06:54:59 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:54:59 STDIO [INFO] Bolt Information for node: N-TZD20,-1.3951983464003903,201403220638Va: -1.3951983464003903LISA Value:-1.2079954062762808
+2014-03-22 06:54:59 task [INFO] Emitting: SensorBolt2 default [N-TZD20,-1.3951983464003903,201403220638, -1.2079954062762808]
+2014-03-22 06:54:59 executor [INFO] Loading executor SensorLisaBolt:[13 13]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorLisaBolt __system ["startup"]
+2014-03-22 06:54:59 executor [INFO] Loaded executor tasks SensorLisaBolt:[13 13]
+2014-03-22 06:54:59 executor [INFO] Preparing bolt SensorLisaBolt:(13)
+2014-03-22 06:54:59 executor [INFO] Finished loading executor SensorLisaBolt:[13 13]
+2014-03-22 06:54:59 executor [INFO] Prepared bolt SensorLisaBolt:(13)
+2014-03-22 06:54:59 executor [INFO] Processing received message source: SensorBolt2:4, stream: default, id: {}, [N-GRDHN,-0.6064382206996778,201403220638, -0.8193617080803245]
+2014-03-22 06:54:59 executor [INFO] Loading executor SensorLisaBolt:[16 16]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorLisaBolt __system ["startup"]
+2014-03-22 06:54:59 executor [INFO] Loaded executor tasks SensorLisaBolt:[16 16]
+2014-03-22 06:54:59 executor [INFO] Finished loading executor SensorLisaBolt:[16 16]
+2014-03-22 06:54:59 executor [INFO] Preparing bolt SensorLisaBolt:(16)
+2014-03-22 06:54:59 executor [INFO] Prepared bolt SensorLisaBolt:(16)
+2014-03-22 06:54:59 executor [INFO] Processing received message source: SensorBolt2:4, stream: default, id: {}, [N-Y47X6,-1.2943457455969938,201403220638, 1.7860853571368753]
+2014-03-22 06:54:59 executor [INFO] Loading executor SensorBolt2:[1 1]
+2014-03-22 06:54:59 task [INFO] Emitting: SensorBolt2 __system ["startup"]
+2014-03-22 06:54:59 executor [INFO] Loaded executor tasks SensorBolt2:[1 1]
+2014-03-22 06:54:59 executor [INFO] Preparing bolt SensorBolt2:(1)
+2014-03-22 06:54:59 executor [INFO] Finished loading executor SensorBolt2:[1 1]
+2014-03-22 06:54:59 executor [INFO] Prepared bolt SensorBolt2:(1)
+2014-03-22 06:54:59 worker [INFO] Launching receive-thread for 8370dd5b-3fb3-4feb-85df-c2ba6c53c1c6:6703
+2014-03-22 06:54:59 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000011001000000, N-2GWON,0.4679762929576685,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: -0.29114990842834665
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:54:59 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:54:59 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:54:59 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:54:59 STDIO [INFO] Bolt Information for node: N-2GWON,0.4679762929576685,201403220638Va: 0.4679762929576685LISA Value:0.14231615767537792
+2014-03-22 06:54:59 task [INFO] Emitting: SensorBolt2 default [N-2GWON,0.4679762929576685,201403220638, 0.14231615767537792]
+2014-03-22 06:54:59 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000010011, N-L04BJ,1.7006766970342815,201403220638:N-GRDHN,-0.6064382206996778,201403220638:N-JQ338,1.2224799134564661,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: -0.6064382206996778
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: 1.2224799134564661
+2014-03-22 06:54:59 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:54:59 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:54:59 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:54:59 STDIO [INFO] Bolt Information for node: N-L04BJ,1.7006766970342815,201403220638Va: 1.7006766970342815LISA Value:0.39502622058674647
+2014-03-22 06:54:59 task [INFO] Emitting: SensorBolt2 default [N-L04BJ,1.7006766970342815,201403220638, 0.39502622058674647]
+2014-03-22 06:54:59 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000001001100, N-2Z2WK,-1.7314405156807104,201403220638:N-Y47X6,-1.2943457455969938,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: -1.2943457455969938
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:54:59 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:54:59 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:54:59 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:54:59 STDIO [INFO] Bolt Information for node: N-2Z2WK,-1.7314405156807104,201403220638Va: -1.7314405156807104LISA Value:0.14457506017278118
+2014-03-22 06:54:59 task [INFO] Emitting: SensorBolt2 default [N-2Z2WK,-1.7314405156807104,201403220638, 0.14457506017278118]
+2014-03-22 06:54:59 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000001110000, N-3IK0Y,2.075062411609478,201403220638:N-JQ338,1.2224799134564661,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-2Z2WK,-1.7314405156807104,201403220638, 0.14457506017278118]
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: 1.2224799134564661
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:54:59 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:54:59 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:54:59 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:54:59 STDIO [INFO] Bolt Information for node: N-3IK0Y,2.075062411609478,201403220638Va: 2.075062411609478LISA Value:1.8699969342663674
+2014-03-22 06:54:59 task [INFO] Emitting: SensorBolt2 default [N-3IK0Y,2.075062411609478,201403220638, 1.8699969342663674]
+2014-03-22 06:54:59 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-3IK0Y,2.075062411609478,201403220638, 1.8699969342663674]
+2014-03-22 06:54:59 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000110001, N-JQ338,1.2224799134564661,201403220638:N-L04BJ,1.7006766970342815,201403220638:N-3IK0Y,2.075062411609478,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: 1.7006766970342815
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: 2.075062411609478
+2014-03-22 06:54:59 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:54:59 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:54:59 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:54:59 STDIO [INFO] Bolt Information for node: N-JQ338,1.2224799134564661,201403220638Va: 1.2224799134564661LISA Value:1.7876683930868122
+2014-03-22 06:54:59 task [INFO] Emitting: SensorBolt2 default [N-JQ338,1.2224799134564661,201403220638, 1.7876683930868122]
+2014-03-22 06:54:59 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000010011100100, N-WRYAZ,1.1042102924152977,201403220638:N-2GWON,0.4679762929576685,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:N-3IK0Y,2.075062411609478,201403220638:N-TZD20,-1.3951983464003903,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: 0.4679762929576685
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: -1.7314405156807104
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: 2.075062411609478
+2014-03-22 06:54:59 STDIO [INFO] Find Neighbors: -1.3951983464003903
+2014-03-22 06:54:59 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:54:59 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:54:59 STDIO [INFO] Number of Neighbors: 4
+2014-03-22 06:54:59 STDIO [INFO] Bolt Information for node: N-WRYAZ,1.1042102924152977,201403220638Va: 1.1042102924152977LISA Value:-0.13444760628963554
+2014-03-22 06:54:59 task [INFO] Emitting: SensorBolt2 default [N-WRYAZ,1.1042102924152977,201403220638, -0.13444760628963554]
+2014-03-22 06:54:59 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-WRYAZ,1.1042102924152977,201403220638, -0.13444760628963554]
+2014-03-22 06:54:59 worker [INFO] Worker has topology config {"storm.id" "SensorLISATopologyTest145_9-1-1395467668", "dev.zookeeper.path" "/tmp/dev-storm-zookeeper", "topology.tick.tuple.freq.secs" nil, "topology.fall.back.on.java.serialization" true, "topology.max.error.report.per.interval" 5, "zmq.linger.millis" 5000, "topology.skip.missing.kryo.registrations" false, "ui.childopts" "-Xmx768m", "storm.zookeeper.session.timeout" 20000, "nimbus.reassign" true, "topology.trident.batch.emit.interval.millis" 500, "nimbus.monitor.freq.secs" 10, "java.library.path" "/usr/local/lib/", "topology.executor.send.buffer.size" 1024, "storm.local.dir" "/tmp/", "supervisor.worker.start.timeout.secs" 240, "wordsFile" "/home/simpal/stormSensorReco/SensorSimulation/SensorSimulations/StormSensorApp/logData", "topology.enable.message.timeouts" true, "nimbus.cleanup.inbox.freq.secs" 600, "nimbus.inbox.jar.expiration.secs" 3600, "drpc.worker.threads" 64, "topology.worker.shared.thread.pool.size" 4, "nimbus.host" "localhost", "storm.zookeeper.port" 2181, "transactional.zookeeper.port" nil, "topology.executor.receive.buffer.size" 1024, "transactional.zookeeper.servers" nil, "storm.zookeeper.root" "/storm", "supervisor.enable" true, "storm.zookeeper.servers" ["134.21.245.67" "134.21.73.201" "134.21.73.210"], "transactional.zookeeper.root" "/transactional", "topology.acker.executors" 1, "topology.kryo.decorators" (), "topology.name" "SensorLISATopologyTest145_9", "topology.transfer.buffer.size" 1024, "topology.worker.childopts" nil, "drpc.queue.size" 128, "worker.childopts" "-Xmx768m", "supervisor.heartbeat.frequency.secs" 5, "topology.error.throttle.interval.secs" 10, "zmq.hwm" 0, "drpc.port" 3772, "supervisor.monitor.frequency.secs" 3, "topology.receiver.buffer.size" 8, "task.heartbeat.frequency.secs" 3, "topology.tasks" nil, "topology.spout.wait.strategy" "backtype.storm.spout.SleepSpoutWaitStrategy", "topology.max.spout.pending" 3, "storm.zookeeper.retry.interval" 1000, "topology.sleep.spout.wait.strategy.time.ms" 1, "nimbus.topology.validator" "backtype.storm.nimbus.DefaultTopologyValidator", "supervisor.slots.ports" [6700 6701 6702 6703], "topology.debug" true, "nimbus.task.launch.secs" 240, "nimbus.supervisor.timeout.secs" 60, "topology.kryo.register" nil, "topology.message.timeout.secs" 30, "task.refresh.poll.secs" 10, "topology.workers" 3, "supervisor.childopts" "-Xmx256m", "nimbus.thrift.port" 6627, "topology.stats.sample.rate" 0.05, "worker.heartbeat.frequency.secs" 1, "topology.acker.tasks" nil, "topology.disruptor.wait.strategy" "com.lmax.disruptor.BlockingWaitStrategy", "nimbus.task.timeout.secs" 30, "storm.zookeeper.connection.timeout" 15000, "topology.kryo.factory" "backtype.storm.serialization.DefaultKryoFactory", "drpc.invocations.port" 3773, "zmq.threads" 1, "storm.zookeeper.retry.times" 5, "topology.state.synchronization.timeout.secs" 60, "supervisor.worker.timeout.secs" 240, "nimbus.file.copy.expiration.secs" 600, "drpc.request.timeout.secs" 600, "storm.local.mode.zmq" false, "ui.port" 8080, "nimbus.childopts" "-Xmx1024m", "storm.cluster.mode" "distributed", "topology.optimize" true, "topology.max.task.parallelism" nil}
+2014-03-22 06:54:59 worker [INFO] Worker db7b0127-223d-4509-ba91-60fe5f184252 for storm SensorLISATopologyTest145_9-1-1395467668 on 8370dd5b-3fb3-4feb-85df-c2ba6c53c1c6:6703 has finished loading
+2014-03-22 06:55:02 task [INFO] Emitting: SensorEmitter default [N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorEmitter __ack_init [6326753625520699138 -5976227056054820163 7]
+2014-03-22 06:55:02 executor [INFO] Processing received message source: SensorEmitter:7, stream: default, id: {6326753625520699138=-3713665269012526129}, [N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter default [0010011100000000, N-UFCUA,-0.29114990842834665,201403220638:N-2GWON,0.4679762929576685,201403220638:N-LETTK,0.6937018920545661,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0010011100000000, N-UFCUA,-0.29114990842834665,201403220638:N-2GWON,0.4679762929576685,201403220638:N-LETTK,0.6937018920545661,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: 0.4679762929576685
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: 0.6937018920545661
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: -1.1260429155929481
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter __ack_ack [6326753625520699138 -3713665269012526129]
+2014-03-22 06:55:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:02 STDIO [INFO] Number of Neighbors: 3
+2014-03-22 06:55:02 STDIO [INFO] Bolt Information for node: N-UFCUA,-0.29114990842834665,201403220638Va: -0.29114990842834665LISA Value:-3.130264100660589E-4
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter default [0000000000000011, N-GRDHN,-0.6064382206996778,201403220638:N-L04BJ,1.7006766970342815,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorBolt2 default [N-UFCUA,-0.29114990842834665,201403220638, -3.130264100660589E-4]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter __ack_ack [6326753625520699138 -3713665269012526129]
+2014-03-22 06:55:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000000011, N-GRDHN,-0.6064382206996778,201403220638:N-L04BJ,1.7006766970342815,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: 1.7006766970342815
+2014-03-22 06:55:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter default [0000011001000000, N-2GWON,0.4679762929576685,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:55:02 STDIO [INFO] Bolt Information for node: N-GRDHN,-0.6064382206996778,201403220638Va: -0.6064382206996778LISA Value:-0.8193617080803245
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter __ack_ack [6326753625520699138 -3713665269012526129]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorBolt2 default [N-GRDHN,-0.6064382206996778,201403220638, -0.8193617080803245]
+2014-03-22 06:55:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000011001000000, N-2GWON,0.4679762929576685,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: -0.29114990842834665
+2014-03-22 06:55:02 executor [INFO] Processing received message source: SensorBolt2:4, stream: default, id: {}, [N-GRDHN,-0.6064382206996778,201403220638, -0.8193617080803245]
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:55:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter default [1000100000000000, N-8HOVD,-0.03721706389113577,201403220638:N-H563T,-0.28234801313940555,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:02 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter __ack_ack [6326753625520699138 -3713665269012526129]
+2014-03-22 06:55:02 STDIO [INFO] Bolt Information for node: N-2GWON,0.4679762929576685,201403220638Va: 0.4679762929576685LISA Value:0.14231615767537792
+2014-03-22 06:55:02 task [INFO] Emitting: SensorBolt2 default [N-2GWON,0.4679762929576685,201403220638, 0.14231615767537792]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter default [0000000000010011, N-L04BJ,1.7006766970342815,201403220638:N-GRDHN,-0.6064382206996778,201403220638:N-JQ338,1.2224799134564661,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter __ack_ack [6326753625520699138 -3713665269012526129]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter default [0000000001001100, N-2Z2WK,-1.7314405156807104,201403220638:N-Y47X6,-1.2943457455969938,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter __ack_ack [6326753625520699138 -3713665269012526129]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter default [0000000001110000, N-3IK0Y,2.075062411609478,201403220638:N-JQ338,1.2224799134564661,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter __ack_ack [6326753625520699138 -3713665269012526129]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter default [0000000000001100, N-Y47X6,-1.2943457455969938,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000010011, N-L04BJ,1.7006766970342815,201403220638:N-GRDHN,-0.6064382206996778,201403220638:N-JQ338,1.2224799134564661,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000001100, N-Y47X6,-1.2943457455969938,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: -0.6064382206996778
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: 1.2224799134564661
+2014-03-22 06:55:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:02 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-2GWON,0.4679762929576685,201403220638, 0.14231615767537792]
+2014-03-22 06:55:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:02 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: -1.7314405156807104
+2014-03-22 06:55:02 STDIO [INFO] Bolt Information for node: N-L04BJ,1.7006766970342815,201403220638Va: 1.7006766970342815LISA Value:0.39502622058674647
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter __ack_ack [6326753625520699138 -3713665269012526129]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorBolt2 default [N-L04BJ,1.7006766970342815,201403220638, 0.39502622058674647]
+2014-03-22 06:55:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000001001100, N-2Z2WK,-1.7314405156807104,201403220638:N-Y47X6,-1.2943457455969938,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:55:02 STDIO [INFO] Bolt Information for node: N-Y47X6,-1.2943457455969938,201403220638Va: -1.2943457455969938LISA Value:1.7860853571368753
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: -1.2943457455969938
+2014-03-22 06:55:02 task [INFO] Emitting: SensorBolt2 default [N-Y47X6,-1.2943457455969938,201403220638, 1.7860853571368753]
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:55:02 executor [INFO] Processing received message source: SensorBolt2:4, stream: default, id: {}, [N-Y47X6,-1.2943457455969938,201403220638, 1.7860853571368753]
+2014-03-22 06:55:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter default [0000000000110001, N-JQ338,1.2224799134564661,201403220638:N-L04BJ,1.7006766970342815,201403220638:N-3IK0Y,2.075062411609478,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter __ack_ack [6326753625520699138 -3713665269012526129]
+2014-03-22 06:55:02 STDIO [INFO] Bolt Information for node: N-2Z2WK,-1.7314405156807104,201403220638Va: -1.7314405156807104LISA Value:0.14457506017278118
+2014-03-22 06:55:02 task [INFO] Emitting: SensorBolt2 default [N-2Z2WK,-1.7314405156807104,201403220638, 0.14457506017278118]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter default [0001000100000000, N-SCK04,-0.17732269034052123,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000001110000, N-3IK0Y,2.075062411609478,201403220638:N-JQ338,1.2224799134564661,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: 1.2224799134564661
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter __ack_ack [6326753625520699138 -3713665269012526129]
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:55:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:02 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter default [1110000000000000, N-QWNZH,-0.1642343179055442,201403220638:N-LETTK,0.6937018920545661,201403220638:N-H563T,-0.28234801313940555,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 STDIO [INFO] Bolt Information for node: N-3IK0Y,2.075062411609478,201403220638Va: 2.075062411609478LISA Value:1.8699969342663674
+2014-03-22 06:55:02 task [INFO] Emitting: SensorBolt2 default [N-3IK0Y,2.075062411609478,201403220638, 1.8699969342663674]
+2014-03-22 06:55:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000110001, N-JQ338,1.2224799134564661,201403220638:N-L04BJ,1.7006766970342815,201403220638:N-3IK0Y,2.075062411609478,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-3IK0Y,2.075062411609478,201403220638, 1.8699969342663674]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter __ack_ack [6326753625520699138 -3713665269012526129]
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: 1.7006766970342815
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: 2.075062411609478
+2014-03-22 06:55:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter default [0110001000000000, N-LETTK,0.6937018920545661,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-QWNZH,-0.1642343179055442,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:55:02 STDIO [INFO] Bolt Information for node: N-JQ338,1.2224799134564661,201403220638Va: 1.2224799134564661LISA Value:1.7876683930868122
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter __ack_ack [6326753625520699138 -3713665269012526129]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorBolt2 default [N-JQ338,1.2224799134564661,201403220638, 1.7876683930868122]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter default [1100100000000000, N-H563T,-0.28234801313940555,201403220638:N-8HOVD,-0.03721706389113577,201403220638:N-QWNZH,-0.1642343179055442,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter __ack_ack [6326753625520699138 -3713665269012526129]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter default [0000010011100100, N-WRYAZ,1.1042102924152977,201403220638:N-2GWON,0.4679762929576685,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:N-3IK0Y,2.075062411609478,201403220638:N-TZD20,-1.3951983464003903,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter __ack_ack [6326753625520699138 -3713665269012526129]
+2014-03-22 06:55:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000010011100100, N-WRYAZ,1.1042102924152977,201403220638:N-2GWON,0.4679762929576685,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:N-3IK0Y,2.075062411609478,201403220638:N-TZD20,-1.3951983464003903,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter default [0000000011000000, N-TZD20,-1.3951983464003903,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: 0.4679762929576685
+2014-03-22 06:55:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000011000000, N-TZD20,-1.3951983464003903,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: -1.7314405156807104
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: 2.075062411609478
+2014-03-22 06:55:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter __ack_ack [6326753625520699138 -3713665269012526129]
+2014-03-22 06:55:02 STDIO [INFO] Find Neighbors: -1.3951983464003903
+2014-03-22 06:55:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:02 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:55:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter default [0001000100000000, N-6PFYW,-1.1260429155929481,201403220638:N-SCK04,-0.17732269034052123,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:02 STDIO [INFO] Bolt Information for node: N-TZD20,-1.3951983464003903,201403220638Va: -1.3951983464003903LISA Value:-1.2079954062762808
+2014-03-22 06:55:02 task [INFO] Emitting: SensorBolt2 default [N-TZD20,-1.3951983464003903,201403220638, -1.2079954062762808]
+2014-03-22 06:55:02 task [INFO] Emitting: SensorGetter __ack_ack [6326753625520699138 -3713665269012526129]
+2014-03-22 06:55:02 STDIO [INFO] Number of Neighbors: 4
+2014-03-22 06:55:02 STDIO [INFO] Bolt Information for node: N-WRYAZ,1.1042102924152977,201403220638Va: 1.1042102924152977LISA Value:-0.13444760628963554
+2014-03-22 06:55:02 task [INFO] Emitting: SensorBolt2 default [N-WRYAZ,1.1042102924152977,201403220638, -0.13444760628963554]
+2014-03-22 06:55:02 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-WRYAZ,1.1042102924152977,201403220638, -0.13444760628963554]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorEmitter default [N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorEmitter __ack_init [152842681978564159 136967771711849817 7]
+2014-03-22 06:55:05 executor [INFO] Processing received message source: SensorEmitter:7, stream: default, id: {152842681978564159=5496259193839718722}, [N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter default [0010011100000000, N-UFCUA,-0.29114990842834665,201403220638:N-2GWON,0.4679762929576685,201403220638:N-LETTK,0.6937018920545661,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0010011100000000, N-UFCUA,-0.29114990842834665,201403220638:N-2GWON,0.4679762929576685,201403220638:N-LETTK,0.6937018920545661,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter __ack_ack [152842681978564159 5496259193839718722]
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: 0.4679762929576685
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: 0.6937018920545661
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter default [0000000000000011, N-GRDHN,-0.6064382206996778,201403220638:N-L04BJ,1.7006766970342815,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: -1.1260429155929481
+2014-03-22 06:55:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter __ack_ack [152842681978564159 5496259193839718722]
+2014-03-22 06:55:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:05 STDIO [INFO] Number of Neighbors: 3
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter default [0000011001000000, N-2GWON,0.4679762929576685,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 STDIO [INFO] Bolt Information for node: N-UFCUA,-0.29114990842834665,201403220638Va: -0.29114990842834665LISA Value:-3.130264100660589E-4
+2014-03-22 06:55:05 task [INFO] Emitting: SensorBolt2 default [N-UFCUA,-0.29114990842834665,201403220638, -3.130264100660589E-4]
+2014-03-22 06:55:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000011001000000, N-2GWON,0.4679762929576685,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter __ack_ack [152842681978564159 5496259193839718722]
+2014-03-22 06:55:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000000011, N-GRDHN,-0.6064382206996778,201403220638:N-L04BJ,1.7006766970342815,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: -0.29114990842834665
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: 1.7006766970342815
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter default [1000100000000000, N-8HOVD,-0.03721706389113577,201403220638:N-H563T,-0.28234801313940555,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:05 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter __ack_ack [152842681978564159 5496259193839718722]
+2014-03-22 06:55:05 STDIO [INFO] Bolt Information for node: N-GRDHN,-0.6064382206996778,201403220638Va: -0.6064382206996778LISA Value:-0.8193617080803245
+2014-03-22 06:55:05 task [INFO] Emitting: SensorBolt2 default [N-GRDHN,-0.6064382206996778,201403220638, -0.8193617080803245]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter default [0000000000010011, N-L04BJ,1.7006766970342815,201403220638:N-GRDHN,-0.6064382206996778,201403220638:N-JQ338,1.2224799134564661,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 executor [INFO] Processing received message source: SensorBolt2:4, stream: default, id: {}, [N-GRDHN,-0.6064382206996778,201403220638, -0.8193617080803245]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter __ack_ack [152842681978564159 5496259193839718722]
+2014-03-22 06:55:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:05 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:55:05 STDIO [INFO] Bolt Information for node: N-2GWON,0.4679762929576685,201403220638Va: 0.4679762929576685LISA Value:0.14231615767537792
+2014-03-22 06:55:05 task [INFO] Emitting: SensorBolt2 default [N-2GWON,0.4679762929576685,201403220638, 0.14231615767537792]
+2014-03-22 06:55:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000010011, N-L04BJ,1.7006766970342815,201403220638:N-GRDHN,-0.6064382206996778,201403220638:N-JQ338,1.2224799134564661,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: -0.6064382206996778
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: 1.2224799134564661
+2014-03-22 06:55:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:05 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:55:05 STDIO [INFO] Bolt Information for node: N-L04BJ,1.7006766970342815,201403220638Va: 1.7006766970342815LISA Value:0.39502622058674647
+2014-03-22 06:55:05 task [INFO] Emitting: SensorBolt2 default [N-L04BJ,1.7006766970342815,201403220638, 0.39502622058674647]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter default [0000000001001100, N-2Z2WK,-1.7314405156807104,201403220638:N-Y47X6,-1.2943457455969938,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000001001100, N-2Z2WK,-1.7314405156807104,201403220638:N-Y47X6,-1.2943457455969938,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: -1.2943457455969938
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter __ack_ack [152842681978564159 5496259193839718722]
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:55:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:05 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter default [0000000001110000, N-3IK0Y,2.075062411609478,201403220638:N-JQ338,1.2224799134564661,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 STDIO [INFO] Bolt Information for node: N-2Z2WK,-1.7314405156807104,201403220638Va: -1.7314405156807104LISA Value:0.14457506017278118
+2014-03-22 06:55:05 task [INFO] Emitting: SensorBolt2 default [N-2Z2WK,-1.7314405156807104,201403220638, 0.14457506017278118]
+2014-03-22 06:55:05 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-2Z2WK,-1.7314405156807104,201403220638, 0.14457506017278118]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter __ack_ack [152842681978564159 5496259193839718722]
+2014-03-22 06:55:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000001110000, N-3IK0Y,2.075062411609478,201403220638:N-JQ338,1.2224799134564661,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter default [0000000000001100, N-Y47X6,-1.2943457455969938,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: 1.2224799134564661
+2014-03-22 06:55:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000001100, N-Y47X6,-1.2943457455969938,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter __ack_ack [152842681978564159 5496259193839718722]
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: -1.7314405156807104
+2014-03-22 06:55:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter default [0000000000110001, N-JQ338,1.2224799134564661,201403220638:N-L04BJ,1.7006766970342815,201403220638:N-3IK0Y,2.075062411609478,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:55:05 STDIO [INFO] Bolt Information for node: N-Y47X6,-1.2943457455969938,201403220638Va: -1.2943457455969938LISA Value:1.7860853571368753
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:55:05 task [INFO] Emitting: SensorBolt2 default [N-Y47X6,-1.2943457455969938,201403220638, 1.7860853571368753]
+2014-03-22 06:55:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter __ack_ack [152842681978564159 5496259193839718722]
+2014-03-22 06:55:05 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:55:05 STDIO [INFO] Bolt Information for node: N-3IK0Y,2.075062411609478,201403220638Va: 2.075062411609478LISA Value:1.8699969342663674
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter default [0001000100000000, N-SCK04,-0.17732269034052123,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorBolt2 default [N-3IK0Y,2.075062411609478,201403220638, 1.8699969342663674]
+2014-03-22 06:55:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000110001, N-JQ338,1.2224799134564661,201403220638:N-L04BJ,1.7006766970342815,201403220638:N-3IK0Y,2.075062411609478,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-3IK0Y,2.075062411609478,201403220638, 1.8699969342663674]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter __ack_ack [152842681978564159 5496259193839718722]
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: 1.7006766970342815
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter default [1110000000000000, N-QWNZH,-0.1642343179055442,201403220638:N-LETTK,0.6937018920545661,201403220638:N-H563T,-0.28234801313940555,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: 2.075062411609478
+2014-03-22 06:55:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter __ack_ack [152842681978564159 5496259193839718722]
+2014-03-22 06:55:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:05 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter default [0110001000000000, N-LETTK,0.6937018920545661,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-QWNZH,-0.1642343179055442,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 STDIO [INFO] Bolt Information for node: N-JQ338,1.2224799134564661,201403220638Va: 1.2224799134564661LISA Value:1.7876683930868122
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter __ack_ack [152842681978564159 5496259193839718722]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorBolt2 default [N-JQ338,1.2224799134564661,201403220638, 1.7876683930868122]
+2014-03-22 06:55:05 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-JQ338,1.2224799134564661,201403220638, 1.7876683930868122]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter default [1100100000000000, N-H563T,-0.28234801313940555,201403220638:N-8HOVD,-0.03721706389113577,201403220638:N-QWNZH,-0.1642343179055442,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter __ack_ack [152842681978564159 5496259193839718722]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter default [0000010011100100, N-WRYAZ,1.1042102924152977,201403220638:N-2GWON,0.4679762929576685,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:N-3IK0Y,2.075062411609478,201403220638:N-TZD20,-1.3951983464003903,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter __ack_ack [152842681978564159 5496259193839718722]
+2014-03-22 06:55:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000010011100100, N-WRYAZ,1.1042102924152977,201403220638:N-2GWON,0.4679762929576685,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:N-3IK0Y,2.075062411609478,201403220638:N-TZD20,-1.3951983464003903,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter default [0000000011000000, N-TZD20,-1.3951983464003903,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: 0.4679762929576685
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter __ack_ack [152842681978564159 5496259193839718722]
+2014-03-22 06:55:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000011000000, N-TZD20,-1.3951983464003903,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter default [0001000100000000, N-6PFYW,-1.1260429155929481,201403220638:N-SCK04,-0.17732269034052123,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: -1.7314405156807104
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: 2.075062411609478
+2014-03-22 06:55:05 task [INFO] Emitting: SensorGetter __ack_ack [152842681978564159 5496259193839718722]
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:55:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:05 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:55:05 STDIO [INFO] Bolt Information for node: N-TZD20,-1.3951983464003903,201403220638Va: -1.3951983464003903LISA Value:-1.2079954062762808
+2014-03-22 06:55:05 task [INFO] Emitting: SensorBolt2 default [N-TZD20,-1.3951983464003903,201403220638, -1.2079954062762808]
+2014-03-22 06:55:05 executor [INFO] Processing received message source: SensorBolt2:4, stream: default, id: {}, [N-TZD20,-1.3951983464003903,201403220638, -1.2079954062762808]
+2014-03-22 06:55:05 STDIO [INFO] Find Neighbors: -1.3951983464003903
+2014-03-22 06:55:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:55:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:55:05 STDIO [INFO] Number of Neighbors: 4
+2014-03-22 06:55:05 STDIO [INFO] Bolt Information for node: N-WRYAZ,1.1042102924152977,201403220638Va: 1.1042102924152977LISA Value:-0.13444760628963554
+2014-03-22 06:55:05 task [INFO] Emitting: SensorBolt2 default [N-WRYAZ,1.1042102924152977,201403220638, -0.13444760628963554]
+2014-03-22 06:55:29 executor [INFO] Processing received message source: __system:-1, stream: __tick, id: {}, [30]
+2014-03-22 06:55:59 executor [INFO] Processing received message source: __system:-1, stream: __tick, id: {}, [30]
+2014-03-22 06:55:59 STDIO [INFO] Not Read:N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+2014-03-22 06:55:59 STDIO [INFO] Not Read:N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+2014-03-22 06:55:59 STDIO [INFO] Not Read:N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+2014-03-22 06:56:02 task [INFO] Emitting: SensorEmitter default [N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+]
+2014-03-22 06:56:02 executor [INFO] Processing received message source: SensorEmitter:7, stream: default, id: {-8377759218625896298=5530650893012014853}, [N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorEmitter __ack_init [-8377759218625896298 -6288301634464046115 7]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter default [0010011100000000, N-UFCUA,-0.29114990842834665,201403220638:N-2GWON,0.4679762929576685,201403220638:N-LETTK,0.6937018920545661,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter __ack_ack [-8377759218625896298 5530650893012014853]
+2014-03-22 06:56:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0010011100000000, N-UFCUA,-0.29114990842834665,201403220638:N-2GWON,0.4679762929576685,201403220638:N-LETTK,0.6937018920545661,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: 0.4679762929576685
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter default [0000000000000011, N-GRDHN,-0.6064382206996778,201403220638:N-L04BJ,1.7006766970342815,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: 0.6937018920545661
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: -1.1260429155929481
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter __ack_ack [-8377759218625896298 5530650893012014853]
+2014-03-22 06:56:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter default [0000011001000000, N-2GWON,0.4679762929576685,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 STDIO [INFO] Number of Neighbors: 3
+2014-03-22 06:56:02 STDIO [INFO] Bolt Information for node: N-UFCUA,-0.29114990842834665,201403220638Va: -0.29114990842834665LISA Value:-3.130264100660589E-4
+2014-03-22 06:56:02 task [INFO] Emitting: SensorBolt2 default [N-UFCUA,-0.29114990842834665,201403220638, -3.130264100660589E-4]
+2014-03-22 06:56:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000000011, N-GRDHN,-0.6064382206996778,201403220638:N-L04BJ,1.7006766970342815,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: 1.7006766970342815
+2014-03-22 06:56:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:02 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:56:02 STDIO [INFO] Bolt Information for node: N-GRDHN,-0.6064382206996778,201403220638Va: -0.6064382206996778LISA Value:-0.8193617080803245
+2014-03-22 06:56:02 task [INFO] Emitting: SensorBolt2 default [N-GRDHN,-0.6064382206996778,201403220638, -0.8193617080803245]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter __ack_ack [-8377759218625896298 5530650893012014853]
+2014-03-22 06:56:02 executor [INFO] Processing received message source: SensorBolt2:4, stream: default, id: {}, [N-GRDHN,-0.6064382206996778,201403220638, -0.8193617080803245]
+2014-03-22 06:56:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000011001000000, N-2GWON,0.4679762929576685,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter default [1000100000000000, N-8HOVD,-0.03721706389113577,201403220638:N-H563T,-0.28234801313940555,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: -0.29114990842834665
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter __ack_ack [-8377759218625896298 5530650893012014853]
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:56:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter default [0000000000010011, N-L04BJ,1.7006766970342815,201403220638:N-GRDHN,-0.6064382206996778,201403220638:N-JQ338,1.2224799134564661,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:56:02 STDIO [INFO] Bolt Information for node: N-2GWON,0.4679762929576685,201403220638Va: 0.4679762929576685LISA Value:0.14231615767537792
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter __ack_ack [-8377759218625896298 5530650893012014853]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorBolt2 default [N-2GWON,0.4679762929576685,201403220638, 0.14231615767537792]
+2014-03-22 06:56:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000010011, N-L04BJ,1.7006766970342815,201403220638:N-GRDHN,-0.6064382206996778,201403220638:N-JQ338,1.2224799134564661,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: -0.6064382206996778
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter default [0000000001001100, N-2Z2WK,-1.7314405156807104,201403220638:N-Y47X6,-1.2943457455969938,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: 1.2224799134564661
+2014-03-22 06:56:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter __ack_ack [-8377759218625896298 5530650893012014853]
+2014-03-22 06:56:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:02 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:56:02 STDIO [INFO] Bolt Information for node: N-L04BJ,1.7006766970342815,201403220638Va: 1.7006766970342815LISA Value:0.39502622058674647
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter default [0000000001110000, N-3IK0Y,2.075062411609478,201403220638:N-JQ338,1.2224799134564661,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorBolt2 default [N-L04BJ,1.7006766970342815,201403220638, 0.39502622058674647]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter __ack_ack [-8377759218625896298 5530650893012014853]
+2014-03-22 06:56:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000001001100, N-2Z2WK,-1.7314405156807104,201403220638:N-Y47X6,-1.2943457455969938,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: -1.2943457455969938
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter default [0000000000001100, N-Y47X6,-1.2943457455969938,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:56:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000001100, N-Y47X6,-1.2943457455969938,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-2GWON,0.4679762929576685,201403220638, 0.14231615767537792]
+2014-03-22 06:56:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter __ack_ack [-8377759218625896298 5530650893012014853]
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: -1.7314405156807104
+2014-03-22 06:56:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter default [0000000000110001, N-JQ338,1.2224799134564661,201403220638:N-L04BJ,1.7006766970342815,201403220638:N-3IK0Y,2.075062411609478,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:56:02 STDIO [INFO] Bolt Information for node: N-Y47X6,-1.2943457455969938,201403220638Va: -1.2943457455969938LISA Value:1.7860853571368753
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter __ack_ack [-8377759218625896298 5530650893012014853]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorBolt2 default [N-Y47X6,-1.2943457455969938,201403220638, 1.7860853571368753]
+2014-03-22 06:56:02 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter default [0001000100000000, N-SCK04,-0.17732269034052123,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 STDIO [INFO] Bolt Information for node: N-2Z2WK,-1.7314405156807104,201403220638Va: -1.7314405156807104LISA Value:0.14457506017278118
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter __ack_ack [-8377759218625896298 5530650893012014853]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorBolt2 default [N-2Z2WK,-1.7314405156807104,201403220638, 0.14457506017278118]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter default [1110000000000000, N-QWNZH,-0.1642343179055442,201403220638:N-LETTK,0.6937018920545661,201403220638:N-H563T,-0.28234801313940555,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000001110000, N-3IK0Y,2.075062411609478,201403220638:N-JQ338,1.2224799134564661,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter __ack_ack [-8377759218625896298 5530650893012014853]
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: 1.2224799134564661
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:56:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:02 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:56:02 STDIO [INFO] Bolt Information for node: N-3IK0Y,2.075062411609478,201403220638Va: 2.075062411609478LISA Value:1.8699969342663674
+2014-03-22 06:56:02 task [INFO] Emitting: SensorBolt2 default [N-3IK0Y,2.075062411609478,201403220638, 1.8699969342663674]
+2014-03-22 06:56:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000110001, N-JQ338,1.2224799134564661,201403220638:N-L04BJ,1.7006766970342815,201403220638:N-3IK0Y,2.075062411609478,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-3IK0Y,2.075062411609478,201403220638, 1.8699969342663674]
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: 1.7006766970342815
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: 2.075062411609478
+2014-03-22 06:56:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter default [0110001000000000, N-LETTK,0.6937018920545661,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-QWNZH,-0.1642343179055442,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:02 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter __ack_ack [-8377759218625896298 5530650893012014853]
+2014-03-22 06:56:02 STDIO [INFO] Bolt Information for node: N-JQ338,1.2224799134564661,201403220638Va: 1.2224799134564661LISA Value:1.7876683930868122
+2014-03-22 06:56:02 task [INFO] Emitting: SensorBolt2 default [N-JQ338,1.2224799134564661,201403220638, 1.7876683930868122]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter default [1100100000000000, N-H563T,-0.28234801313940555,201403220638:N-8HOVD,-0.03721706389113577,201403220638:N-QWNZH,-0.1642343179055442,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-JQ338,1.2224799134564661,201403220638, 1.7876683930868122]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter __ack_ack [-8377759218625896298 5530650893012014853]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter default [0000010011100100, N-WRYAZ,1.1042102924152977,201403220638:N-2GWON,0.4679762929576685,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:N-3IK0Y,2.075062411609478,201403220638:N-TZD20,-1.3951983464003903,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter __ack_ack [-8377759218625896298 5530650893012014853]
+2014-03-22 06:56:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000010011100100, N-WRYAZ,1.1042102924152977,201403220638:N-2GWON,0.4679762929576685,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:N-3IK0Y,2.075062411609478,201403220638:N-TZD20,-1.3951983464003903,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: 0.4679762929576685
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter default [0000000011000000, N-TZD20,-1.3951983464003903,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: -1.7314405156807104
+2014-03-22 06:56:02 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000011000000, N-TZD20,-1.3951983464003903,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter __ack_ack [-8377759218625896298 5530650893012014853]
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: 2.075062411609478
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter default [0001000100000000, N-6PFYW,-1.1260429155929481,201403220638:N-SCK04,-0.17732269034052123,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:02 STDIO [INFO] Find Neighbors: -1.3951983464003903
+2014-03-22 06:56:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:02 task [INFO] Emitting: SensorGetter __ack_ack [-8377759218625896298 5530650893012014853]
+2014-03-22 06:56:02 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:02 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:02 STDIO [INFO] Number of Neighbors: 4
+2014-03-22 06:56:02 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:56:02 STDIO [INFO] Bolt Information for node: N-WRYAZ,1.1042102924152977,201403220638Va: 1.1042102924152977LISA Value:-0.13444760628963554
+2014-03-22 06:56:02 STDIO [INFO] Bolt Information for node: N-TZD20,-1.3951983464003903,201403220638Va: -1.3951983464003903LISA Value:-1.2079954062762808
+2014-03-22 06:56:02 task [INFO] Emitting: SensorBolt2 default [N-WRYAZ,1.1042102924152977,201403220638, -0.13444760628963554]
+2014-03-22 06:56:02 task [INFO] Emitting: SensorBolt2 default [N-TZD20,-1.3951983464003903,201403220638, -1.2079954062762808]
+2014-03-22 06:56:02 executor [INFO] Processing received message source: SensorBolt2:4, stream: default, id: {}, [N-TZD20,-1.3951983464003903,201403220638, -1.2079954062762808]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorEmitter default [N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorEmitter __ack_init [-1327860532163489819 9067239423386543166 7]
+2014-03-22 06:56:05 executor [INFO] Processing received message source: SensorEmitter:7, stream: default, id: {-1327860532163489819=115769522674211661}, [N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter default [0010011100000000, N-UFCUA,-0.29114990842834665,201403220638:N-2GWON,0.4679762929576685,201403220638:N-LETTK,0.6937018920545661,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter __ack_ack [-1327860532163489819 115769522674211661]
+2014-03-22 06:56:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0010011100000000, N-UFCUA,-0.29114990842834665,201403220638:N-2GWON,0.4679762929576685,201403220638:N-LETTK,0.6937018920545661,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: 0.4679762929576685
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter default [0000000000000011, N-GRDHN,-0.6064382206996778,201403220638:N-L04BJ,1.7006766970342815,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: 0.6937018920545661
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter __ack_ack [-1327860532163489819 115769522674211661]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter default [0000011001000000, N-2GWON,0.4679762929576685,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter __ack_ack [-1327860532163489819 115769522674211661]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter default [1000100000000000, N-8HOVD,-0.03721706389113577,201403220638:N-H563T,-0.28234801313940555,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter __ack_ack [-1327860532163489819 115769522674211661]
+2014-03-22 06:56:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000011001000000, N-2GWON,0.4679762929576685,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: -0.29114990842834665
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:56:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:05 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter default [0000000000010011, N-L04BJ,1.7006766970342815,201403220638:N-GRDHN,-0.6064382206996778,201403220638:N-JQ338,1.2224799134564661,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 STDIO [INFO] Bolt Information for node: N-2GWON,0.4679762929576685,201403220638Va: 0.4679762929576685LISA Value:0.14231615767537792
+2014-03-22 06:56:05 task [INFO] Emitting: SensorBolt2 default [N-2GWON,0.4679762929576685,201403220638, 0.14231615767537792]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter __ack_ack [-1327860532163489819 115769522674211661]
+2014-03-22 06:56:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000010011, N-L04BJ,1.7006766970342815,201403220638:N-GRDHN,-0.6064382206996778,201403220638:N-JQ338,1.2224799134564661,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: -0.6064382206996778
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter default [0000000001001100, N-2Z2WK,-1.7314405156807104,201403220638:N-Y47X6,-1.2943457455969938,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: 1.2224799134564661
+2014-03-22 06:56:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter __ack_ack [-1327860532163489819 115769522674211661]
+2014-03-22 06:56:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:05 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:56:05 STDIO [INFO] Bolt Information for node: N-L04BJ,1.7006766970342815,201403220638Va: 1.7006766970342815LISA Value:0.39502622058674647
+2014-03-22 06:56:05 task [INFO] Emitting: SensorBolt2 default [N-L04BJ,1.7006766970342815,201403220638, 0.39502622058674647]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter default [0000000001110000, N-3IK0Y,2.075062411609478,201403220638:N-JQ338,1.2224799134564661,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000001001100, N-2Z2WK,-1.7314405156807104,201403220638:N-Y47X6,-1.2943457455969938,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter __ack_ack [-1327860532163489819 115769522674211661]
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: -1.2943457455969938
+2014-03-22 06:56:05 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-L04BJ,1.7006766970342815,201403220638, 0.39502622058674647]
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:56:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: -1.1260429155929481
+2014-03-22 06:56:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:05 STDIO [INFO] Number of Neighbors: 3
+2014-03-22 06:56:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:05 STDIO [INFO] Bolt Information for node: N-UFCUA,-0.29114990842834665,201403220638Va: -0.29114990842834665LISA Value:-3.130264100660589E-4
+2014-03-22 06:56:05 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:56:05 STDIO [INFO] Bolt Information for node: N-2Z2WK,-1.7314405156807104,201403220638Va: -1.7314405156807104LISA Value:0.14457506017278118
+2014-03-22 06:56:05 task [INFO] Emitting: SensorBolt2 default [N-UFCUA,-0.29114990842834665,201403220638, -3.130264100660589E-4]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorBolt2 default [N-2Z2WK,-1.7314405156807104,201403220638, 0.14457506017278118]
+2014-03-22 06:56:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000000011, N-GRDHN,-0.6064382206996778,201403220638:N-L04BJ,1.7006766970342815,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: 1.7006766970342815
+2014-03-22 06:56:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:05 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:56:05 STDIO [INFO] Bolt Information for node: N-GRDHN,-0.6064382206996778,201403220638Va: -0.6064382206996778LISA Value:-0.8193617080803245
+2014-03-22 06:56:05 task [INFO] Emitting: SensorBolt2 default [N-GRDHN,-0.6064382206996778,201403220638, -0.8193617080803245]
+2014-03-22 06:56:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000001110000, N-3IK0Y,2.075062411609478,201403220638:N-JQ338,1.2224799134564661,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-2Z2WK,-1.7314405156807104,201403220638, 0.14457506017278118]
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: 1.2224799134564661
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:56:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:05 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:56:05 STDIO [INFO] Bolt Information for node: N-3IK0Y,2.075062411609478,201403220638Va: 2.075062411609478LISA Value:1.8699969342663674
+2014-03-22 06:56:05 task [INFO] Emitting: SensorBolt2 default [N-3IK0Y,2.075062411609478,201403220638, 1.8699969342663674]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter default [0000000000001100, N-Y47X6,-1.2943457455969938,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000001100, N-Y47X6,-1.2943457455969938,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: -1.7314405156807104
+2014-03-22 06:56:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:05 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:56:05 STDIO [INFO] Bolt Information for node: N-Y47X6,-1.2943457455969938,201403220638Va: -1.2943457455969938LISA Value:1.7860853571368753
+2014-03-22 06:56:05 task [INFO] Emitting: SensorBolt2 default [N-Y47X6,-1.2943457455969938,201403220638, 1.7860853571368753]
+2014-03-22 06:56:05 executor [INFO] Processing received message source: SensorBolt2:4, stream: default, id: {}, [N-Y47X6,-1.2943457455969938,201403220638, 1.7860853571368753]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter __ack_ack [-1327860532163489819 115769522674211661]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter default [0000000000110001, N-JQ338,1.2224799134564661,201403220638:N-L04BJ,1.7006766970342815,201403220638:N-3IK0Y,2.075062411609478,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter __ack_ack [-1327860532163489819 115769522674211661]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter default [0001000100000000, N-SCK04,-0.17732269034052123,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000110001, N-JQ338,1.2224799134564661,201403220638:N-L04BJ,1.7006766970342815,201403220638:N-3IK0Y,2.075062411609478,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: 1.7006766970342815
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: 2.075062411609478
+2014-03-22 06:56:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:05 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:56:05 STDIO [INFO] Bolt Information for node: N-JQ338,1.2224799134564661,201403220638Va: 1.2224799134564661LISA Value:1.7876683930868122
+2014-03-22 06:56:05 task [INFO] Emitting: SensorBolt2 default [N-JQ338,1.2224799134564661,201403220638, 1.7876683930868122]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter __ack_ack [-1327860532163489819 115769522674211661]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter default [1110000000000000, N-QWNZH,-0.1642343179055442,201403220638:N-LETTK,0.6937018920545661,201403220638:N-H563T,-0.28234801313940555,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter __ack_ack [-1327860532163489819 115769522674211661]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter default [0110001000000000, N-LETTK,0.6937018920545661,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-QWNZH,-0.1642343179055442,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter __ack_ack [-1327860532163489819 115769522674211661]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter default [1100100000000000, N-H563T,-0.28234801313940555,201403220638:N-8HOVD,-0.03721706389113577,201403220638:N-QWNZH,-0.1642343179055442,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter __ack_ack [-1327860532163489819 115769522674211661]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter default [0000010011100100, N-WRYAZ,1.1042102924152977,201403220638:N-2GWON,0.4679762929576685,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:N-3IK0Y,2.075062411609478,201403220638:N-TZD20,-1.3951983464003903,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000010011100100, N-WRYAZ,1.1042102924152977,201403220638:N-2GWON,0.4679762929576685,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:N-3IK0Y,2.075062411609478,201403220638:N-TZD20,-1.3951983464003903,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: 0.4679762929576685
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: -1.7314405156807104
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: 2.075062411609478
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter __ack_ack [-1327860532163489819 115769522674211661]
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: -1.3951983464003903
+2014-03-22 06:56:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:05 STDIO [INFO] Number of Neighbors: 4
+2014-03-22 06:56:05 STDIO [INFO] Bolt Information for node: N-WRYAZ,1.1042102924152977,201403220638Va: 1.1042102924152977LISA Value:-0.13444760628963554
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter default [0000000011000000, N-TZD20,-1.3951983464003903,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorBolt2 default [N-WRYAZ,1.1042102924152977,201403220638, -0.13444760628963554]
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter __ack_ack [-1327860532163489819 115769522674211661]
+2014-03-22 06:56:05 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000011000000, N-TZD20,-1.3951983464003903,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-WRYAZ,1.1042102924152977,201403220638, -0.13444760628963554]
+2014-03-22 06:56:05 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter default [0001000100000000, N-6PFYW,-1.1260429155929481,201403220638:N-SCK04,-0.17732269034052123,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:05 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:05 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:05 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:56:05 task [INFO] Emitting: SensorGetter __ack_ack [-1327860532163489819 115769522674211661]
+2014-03-22 06:56:05 STDIO [INFO] Bolt Information for node: N-TZD20,-1.3951983464003903,201403220638Va: -1.3951983464003903LISA Value:-1.2079954062762808
+2014-03-22 06:56:05 task [INFO] Emitting: SensorBolt2 default [N-TZD20,-1.3951983464003903,201403220638, -1.2079954062762808]
+2014-03-22 06:56:05 executor [INFO] Processing received message source: SensorBolt2:4, stream: default, id: {}, [N-TZD20,-1.3951983464003903,201403220638, -1.2079954062762808]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorEmitter default [N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorEmitter __ack_init [-6802431332233924565 9201761343677231438 7]
+2014-03-22 06:56:08 executor [INFO] Processing received message source: SensorEmitter:7, stream: default, id: {-6802431332233924565=4095696081838370493}, [N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter default [0010011100000000, N-UFCUA,-0.29114990842834665,201403220638:N-2GWON,0.4679762929576685,201403220638:N-LETTK,0.6937018920545661,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter __ack_ack [-6802431332233924565 4095696081838370493]
+2014-03-22 06:56:08 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0010011100000000, N-UFCUA,-0.29114990842834665,201403220638:N-2GWON,0.4679762929576685,201403220638:N-LETTK,0.6937018920545661,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: 0.4679762929576685
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: 0.6937018920545661
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: -1.1260429155929481
+2014-03-22 06:56:08 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:08 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:08 STDIO [INFO] Number of Neighbors: 3
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter default [0000000000000011, N-GRDHN,-0.6064382206996778,201403220638:N-L04BJ,1.7006766970342815,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 STDIO [INFO] Bolt Information for node: N-UFCUA,-0.29114990842834665,201403220638Va: -0.29114990842834665LISA Value:-3.130264100660589E-4
+2014-03-22 06:56:08 task [INFO] Emitting: SensorBolt2 default [N-UFCUA,-0.29114990842834665,201403220638, -3.130264100660589E-4]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter __ack_ack [-6802431332233924565 4095696081838370493]
+2014-03-22 06:56:08 executor [INFO] Processing received message source: SensorBolt2:4, stream: default, id: {}, [N-UFCUA,-0.29114990842834665,201403220638, -3.130264100660589E-4]
+2014-03-22 06:56:08 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000000011, N-GRDHN,-0.6064382206996778,201403220638:N-L04BJ,1.7006766970342815,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: 1.7006766970342815
+2014-03-22 06:56:08 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:08 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:08 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:56:08 STDIO [INFO] Bolt Information for node: N-GRDHN,-0.6064382206996778,201403220638Va: -0.6064382206996778LISA Value:-0.8193617080803245
+2014-03-22 06:56:08 task [INFO] Emitting: SensorBolt2 default [N-GRDHN,-0.6064382206996778,201403220638, -0.8193617080803245]
+2014-03-22 06:56:08 executor [INFO] Processing received message source: SensorBolt2:4, stream: default, id: {}, [N-GRDHN,-0.6064382206996778,201403220638, -0.8193617080803245]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter default [0000011001000000, N-2GWON,0.4679762929576685,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000011001000000, N-2GWON,0.4679762929576685,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: -0.29114990842834665
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:56:08 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:08 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:08 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:56:08 STDIO [INFO] Bolt Information for node: N-2GWON,0.4679762929576685,201403220638Va: 0.4679762929576685LISA Value:0.14231615767537792
+2014-03-22 06:56:08 task [INFO] Emitting: SensorBolt2 default [N-2GWON,0.4679762929576685,201403220638, 0.14231615767537792]
+2014-03-22 06:56:08 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-2GWON,0.4679762929576685,201403220638, 0.14231615767537792]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter __ack_ack [-6802431332233924565 4095696081838370493]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter default [1000100000000000, N-8HOVD,-0.03721706389113577,201403220638:N-H563T,-0.28234801313940555,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter __ack_ack [-6802431332233924565 4095696081838370493]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter default [0000000000010011, N-L04BJ,1.7006766970342815,201403220638:N-GRDHN,-0.6064382206996778,201403220638:N-JQ338,1.2224799134564661,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000010011, N-L04BJ,1.7006766970342815,201403220638:N-GRDHN,-0.6064382206996778,201403220638:N-JQ338,1.2224799134564661,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter __ack_ack [-6802431332233924565 4095696081838370493]
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: -0.6064382206996778
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: 1.2224799134564661
+2014-03-22 06:56:08 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter default [0000000001001100, N-2Z2WK,-1.7314405156807104,201403220638:N-Y47X6,-1.2943457455969938,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:08 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:56:08 STDIO [INFO] Bolt Information for node: N-L04BJ,1.7006766970342815,201403220638Va: 1.7006766970342815LISA Value:0.39502622058674647
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter __ack_ack [-6802431332233924565 4095696081838370493]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorBolt2 default [N-L04BJ,1.7006766970342815,201403220638, 0.39502622058674647]
+2014-03-22 06:56:08 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000001001100, N-2Z2WK,-1.7314405156807104,201403220638:N-Y47X6,-1.2943457455969938,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter default [0000000001110000, N-3IK0Y,2.075062411609478,201403220638:N-JQ338,1.2224799134564661,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: -1.2943457455969938
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter __ack_ack [-6802431332233924565 4095696081838370493]
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:56:08 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:08 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:08 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter default [0000000000001100, N-Y47X6,-1.2943457455969938,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 STDIO [INFO] Bolt Information for node: N-2Z2WK,-1.7314405156807104,201403220638Va: -1.7314405156807104LISA Value:0.14457506017278118
+2014-03-22 06:56:08 task [INFO] Emitting: SensorBolt2 default [N-2Z2WK,-1.7314405156807104,201403220638, 0.14457506017278118]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter __ack_ack [-6802431332233924565 4095696081838370493]
+2014-03-22 06:56:08 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000001100, N-Y47X6,-1.2943457455969938,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter default [0000000000110001, N-JQ338,1.2224799134564661,201403220638:N-L04BJ,1.7006766970342815,201403220638:N-3IK0Y,2.075062411609478,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000001110000, N-3IK0Y,2.075062411609478,201403220638:N-JQ338,1.2224799134564661,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-2Z2WK,-1.7314405156807104,201403220638, 0.14457506017278118]
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: 1.2224799134564661
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter __ack_ack [-6802431332233924565 4095696081838370493]
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:56:08 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter default [0001000100000000, N-SCK04,-0.17732269034052123,201403220638:N-6PFYW,-1.1260429155929481,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:08 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:56:08 STDIO [INFO] Bolt Information for node: N-3IK0Y,2.075062411609478,201403220638Va: 2.075062411609478LISA Value:1.8699969342663674
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter __ack_ack [-6802431332233924565 4095696081838370493]
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: -1.7314405156807104
+2014-03-22 06:56:08 task [INFO] Emitting: SensorBolt2 default [N-3IK0Y,2.075062411609478,201403220638, 1.8699969342663674]
+2014-03-22 06:56:08 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter default [1110000000000000, N-QWNZH,-0.1642343179055442,201403220638:N-LETTK,0.6937018920545661,201403220638:N-H563T,-0.28234801313940555,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:08 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000000110001, N-JQ338,1.2224799134564661,201403220638:N-L04BJ,1.7006766970342815,201403220638:N-3IK0Y,2.075062411609478,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter __ack_ack [-6802431332233924565 4095696081838370493]
+2014-03-22 06:56:08 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: 1.7006766970342815
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter default [0110001000000000, N-LETTK,0.6937018920545661,201403220638:N-UFCUA,-0.29114990842834665,201403220638:N-QWNZH,-0.1642343179055442,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 STDIO [INFO] Bolt Information for node: N-Y47X6,-1.2943457455969938,201403220638Va: -1.2943457455969938LISA Value:1.7860853571368753
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: 2.075062411609478
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter __ack_ack [-6802431332233924565 4095696081838370493]
+2014-03-22 06:56:08 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:08 task [INFO] Emitting: SensorBolt2 default [N-Y47X6,-1.2943457455969938,201403220638, 1.7860853571368753]
+2014-03-22 06:56:08 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter default [1100100000000000, N-H563T,-0.28234801313940555,201403220638:N-8HOVD,-0.03721706389113577,201403220638:N-QWNZH,-0.1642343179055442,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 STDIO [INFO] Number of Neighbors: 2
+2014-03-22 06:56:08 STDIO [INFO] Bolt Information for node: N-JQ338,1.2224799134564661,201403220638Va: 1.2224799134564661LISA Value:1.7876683930868122
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter __ack_ack [-6802431332233924565 4095696081838370493]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorBolt2 default [N-JQ338,1.2224799134564661,201403220638, 1.7876683930868122]
+2014-03-22 06:56:08 executor [INFO] Processing received message source: SensorBolt2:1, stream: default, id: {}, [N-JQ338,1.2224799134564661,201403220638, 1.7876683930868122]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter default [0000010011100100, N-WRYAZ,1.1042102924152977,201403220638:N-2GWON,0.4679762929576685,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:N-3IK0Y,2.075062411609478,201403220638:N-TZD20,-1.3951983464003903,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000010011100100, N-WRYAZ,1.1042102924152977,201403220638:N-2GWON,0.4679762929576685,201403220638:N-2Z2WK,-1.7314405156807104,201403220638:N-3IK0Y,2.075062411609478,201403220638:N-TZD20,-1.3951983464003903,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter __ack_ack [-6802431332233924565 4095696081838370493]
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: 0.4679762929576685
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: -1.7314405156807104
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: 2.075062411609478
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: -1.3951983464003903
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter default [0000000011000000, N-TZD20,-1.3951983464003903,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 executor [INFO] Processing received message source: SensorGetter:10, stream: default, id: {}, [0000000011000000, N-TZD20,-1.3951983464003903,201403220638:N-WRYAZ,1.1042102924152977,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:08 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:08 STDIO [INFO] Find Neighbors: 1.1042102924152977
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter __ack_ack [-6802431332233924565 4095696081838370493]
+2014-03-22 06:56:08 STDIO [INFO] Mean: 0.010557984123472272
+2014-03-22 06:56:08 STDIO [INFO] Variance: 1.2726941243199128
+2014-03-22 06:56:08 STDIO [INFO] Number of Neighbors: 1
+2014-03-22 06:56:08 STDIO [INFO] Bolt Information for node: N-TZD20,-1.3951983464003903,201403220638Va: -1.3951983464003903LISA Value:-1.2079954062762808
+2014-03-22 06:56:08 STDIO [INFO] Number of Neighbors: 4
+2014-03-22 06:56:08 STDIO [INFO] Bolt Information for node: N-WRYAZ,1.1042102924152977,201403220638Va: 1.1042102924152977LISA Value:-0.13444760628963554
+2014-03-22 06:56:08 task [INFO] Emitting: SensorBolt2 default [N-WRYAZ,1.1042102924152977,201403220638, -0.13444760628963554]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter default [0001000100000000, N-6PFYW,-1.1260429155929481,201403220638:N-SCK04,-0.17732269034052123,201403220638:, 0.010557984123472272, 1.2726941243199128, 201403220638]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorBolt2 default [N-TZD20,-1.3951983464003903,201403220638, -1.2079954062762808]
+2014-03-22 06:56:08 task [INFO] Emitting: SensorGetter __ack_ack [-6802431332233924565 4095696081838370493]
+2014-03-22 06:56:29 executor [INFO] Processing received message source: __system:-1, stream: __tick, id: {}, [30]
+2014-03-22 06:56:59 executor [INFO] Processing received message source: __system:-1, stream: __tick, id: {}, [30]
+2014-03-22 06:56:59 STDIO [INFO] Not Read:N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+2014-03-22 06:56:59 STDIO [INFO] Not Read:N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+2014-03-22 06:56:59 STDIO [INFO] Not Read:N-UFCUA,-0.29114990842834665,201403220638
+N-GRDHN,-0.6064382206996778,201403220638
+N-2GWON,0.4679762929576685,201403220638
+N-8HOVD,-0.03721706389113577,201403220638
+N-L04BJ,1.7006766970342815,201403220638
+N-2Z2WK,-1.7314405156807104,201403220638
+N-3IK0Y,2.075062411609478,201403220638
+N-Y47X6,-1.2943457455969938,201403220638
+N-JQ338,1.2224799134564661,201403220638
+N-SCK04,-0.17732269034052123,201403220638
+N-QWNZH,-0.1642343179055442,201403220638
+N-LETTK,0.6937018920545661,201403220638
+N-H563T,-0.28234801313940555,201403220638
+N-WRYAZ,1.1042102924152977,201403220638
+N-TZD20,-1.3951983464003903,201403220638
+N-6PFYW,-1.1260429155929481,201403220638
+2014-03-22 06:56:59 executor [INFO] Deactivating spout SensorEmitter:(7)

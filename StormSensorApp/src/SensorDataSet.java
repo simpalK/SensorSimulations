@@ -20,9 +20,7 @@ import static java.lang.System.out;
 public class SensorDataSet extends Thread {
 	LinkedList sensorDataMap; 
 	private final long sensorStart = System.currentTimeMillis();
-	Random randomParameterVal = new Random();
-	int high = 2000;
-	int low = 10;
+	Random randomParameterVal = new Random();	
 	public String lastSensorData = null;
 	Date myClock = new Date();
     boolean sensorFlag = true;

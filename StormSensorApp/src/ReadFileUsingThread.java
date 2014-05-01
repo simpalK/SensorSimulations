@@ -55,7 +55,7 @@ class ReadFileUsingThread
         			}        				
         			} 
         	
-			fileReader = new FileReader("/home/simpal/stormSensorReco/SensorSimulation/SensorSimulations/StormSensorApp/jsonSensorFile.txt");
+			fileReader = new FileReader(Global.filesPath + "/jsonSensorFile.txt");
 			
 			BufferedReader reader = new BufferedReader(fileReader);
     		while((str = reader.readLine()) != null){

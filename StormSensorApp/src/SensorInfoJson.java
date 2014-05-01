@@ -34,14 +34,15 @@ public class SensorInfoJson extends Thread {
 	FileReader fileReader;
 	FileReader topologyReader;
 	String[] tokens =new String[100000];
-	String[] filteredTokens =new String[1600];
-	String[] sensorsIds = new String[1600];
-	String[] finalAddedTokens =new String[1600];
-	String[] topologyRows =new String[1600];
+	String[] filteredTokens =new String[Global.numberOfNodes];
+	String[] sensorsIds = new String[Global.numberOfNodes];
+	String[] finalAddedTokens =new String[Global.numberOfNodes];
+	String[] topologyRows =new String[Global.numberOfNodes];
 
 	
-	int[][] coOrdinates = new int[1600][2];
-	/*{
+	//int[][] coOrdinates = new int[1600][2];
+	int[][] coOrdinates = 
+	{
 			{100, 400},
 			{200, 400},
 			{300, 400},
@@ -58,7 +59,7 @@ public class SensorInfoJson extends Thread {
 			{200, 100},
 			{300, 100},
 			{400, 100}
-	};*/
+	};
 	int countLines=0;
 	int countFilterLines =0;
 	int topologyLines = 0;
@@ -68,13 +69,15 @@ public class SensorInfoJson extends Thread {
 	Date myClock = new Date();
     boolean sensorFlag = true;
     private int sensId;
-    int[][] topoFromFile= new int[1600][1600];
-    
+   // int[][] topoFromFile= new int[1600][1600];
+    int[][] topoFromFile= new int[Global.numberOfNodes][Global.numberOfNodes];
+
     SensorInfoJson(String[] sensorsIds) {
     	this.sensorsIds = sensorsIds;
     	int y=20;
     	int x = 20;
-    	for(int i=0; i<1600; i+=40){
+    	//set node co ordinates
+    	/*for(int i=0; i<16; i+=40){
     		x = 20;
     		for(int j =0; j<40;j++){
     		  		coOrdinates[i + j][0]= x;
@@ -82,7 +85,7 @@ public class SensorInfoJson extends Thread {
     		  		x = x+ 20;
     		}
     		y = y + 20;
-    	}
+    	}*/
     	
     	
     	
@@ -120,9 +123,9 @@ public class SensorInfoJson extends Thread {
 	 FileInputStream in=null;
       String str = "";
       String sentence="";
-  	  finalAddedTokens =new String[1600];
+  	  finalAddedTokens =new String[Global.numberOfNodes];
   	  tokens =new String[100000];
-	  filteredTokens =new String[1600];
+	  filteredTokens =new String[Global.numberOfNodes];
 	  countLines=0;
 	  countFilterLines =0;
 	  topologyLines = 0;
@@ -134,23 +137,23 @@ public class SensorInfoJson extends Thread {
     	  Scanner inputStream = null;
 			try
 			{
-			  inputStream = new Scanner(new File("/home/simpal/stormSensorReco/SensorSimulation/SensorSimulations/StormSensorApp/tempTopoFile.txt"));//The txt file is being read correctly.
+			  inputStream = new Scanner(new File(Global.filesPath + "/topologyInformation.txt"));//The txt file is being read correctly.
 			}
 			catch(FileNotFoundException e)
 			{
 			  System.exit(0);
 			}
             
-			for (int row = 0; row < 1600; row++) {
+			for (int row = 0; row < Global.numberOfNodes; row++) {
 			    String line = inputStream.nextLine();
 			    String[] lineValues = line.split(",");
-			  for (int column = 0; column < 1600; column++) {
+			  for (int column = 0; column < Global.numberOfNodes; column++) {
 			    topoFromFile[row][column] = Integer.parseInt(lineValues[column]);
 			  }
 			}
 			inputStream.close();
-          	for(int i=0; i<1600; i++){
-      			for(int j=0; j<1600; j++){
+          	for(int i=0; i<Global.numberOfNodes; i++){
+      			for(int j=0; j<Global.numberOfNodes; j++){
       				if(topoFromFile[i][j]==1){
       					JsonObject jsonObjectLink = Json.createObjectBuilder()
       		        			.add("source", i)
@@ -162,7 +165,7 @@ public class SensorInfoJson extends Thread {
       			}        				
       			} 
       	
-			fileReader = new FileReader("/home/simpal/stormSensorReco/SensorSimulation/SensorSimulations/StormSensorApp/jsonSensorFile.txt");
+			fileReader = new FileReader(Global.filesPath + "/jsonSensorFile.txt");
 
 			BufferedReader reader = new BufferedReader(fileReader);
   		while((str = reader.readLine()) != null){
@@ -189,7 +192,7 @@ public class SensorInfoJson extends Thread {
                   }
               }
       	}
-        for(int k=0; k<1600; k++){
+        for(int k=0; k<Global.numberOfNodes; k++){
         	Boolean foundSensor= false;
         	String findSensor = sensorsIds[k];
         	for(int l=0; l<countFilterLines; l++)
@@ -219,14 +222,23 @@ public class SensorInfoJson extends Thread {
 
     	JsonArrayBuilder jsonArrayBuild= Json.createArrayBuilder();
 
-        for(int i=0;i<1600;i++){
+        for(int i=0;i<Global.numberOfNodes;i++){
           	String word = finalAddedTokens[i];
           	String[] senseVal = word.split(",");
               word = word.trim();
               if(!word.isEmpty()){
+            	  int sensorLisaValue;
+            	  if(senseVal[3].contains("noValue")) {
+            		  sensorLisaValue = 179;
+            		  } else {            	  
+            			  if(Double.parseDouble(senseVal[3])<0.0){ 
+            				  sensorLisaValue = (int) (225 * (Math.pow(Double.parseDouble(senseVal[3]),20))); 
+            				  } else { 
+            					  sensorLisaValue = 123; 
+            					  }}
               	JsonObject jsonObject1 = Json.createObjectBuilder()
               			.add("sensorId", senseVal[0])
-              			.add("group", senseVal[3])
+              			.add("group", sensorLisaValue)
               			.add("x", coOrdinates[i][0] )
               			.add("y", coOrdinates[i][1])
               			.add("fixed", true)
@@ -291,7 +303,7 @@ public class SensorInfoJson extends Thread {
 	   // File file = new File("/home/simpal/stormSensorReco/SensorSimulation/SensorSimulations/StormSensorApp/d3.v3/jsonDataD3.json");
        //if(file.exists())file.createNewFile();
       	try {
-      	FileWriter pw = new FileWriter("/home/simpal/stormSensorReco/SensorSimulation/SensorSimulations/StormSensorApp/d3.v3/jsonDataD3.json",false);
+      	FileWriter pw = new FileWriter(Global.filesPath + "/d3.v3/jsonDataD3.json",false);
       			JsonWriter jsonWriter = Json.createWriterFactory(config).createWriter(pw);
 
       		// Json object is being sent into file system

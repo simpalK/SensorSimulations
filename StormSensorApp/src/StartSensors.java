@@ -11,40 +11,32 @@ import java.lang.reflect.Array;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 public class StartSensors {
-    static HashMap<String,HashMap<Integer,String>> sens = new HashMap<String,HashMap<Integer,String>>();
-    public static HashMap<Integer,String> dat1 = new HashMap<Integer,String>();
-    public static HashMap<Integer,String> dat2 = new HashMap<Integer,String>();
-    public static HashMap<Integer,String> dat3 = new HashMap<Integer,String>();
-    public static HashMap<Integer,String> dat4 = new HashMap<Integer,String>();
-    public static HashMap<Integer,String> dat5 = new HashMap<Integer,String>();
     
-    //topology definition: connection between sensors
-    static int[][] topo = new int[][]{
-    		{0, 0, 0, 1, 0},
-    		{1, 0, 1, 0, 0},
-    		{0, 1, 0, 0, 0},
-    		{1, 0, 0, 0, 1},
-    		{1, 0, 0, 1, 0}
-    		};
     
-    static File fileSensor = new File("logData.txt");
-	static File file1 = new File("logDataSensor1.txt");
+    static File fileSensor;
+	/* for testing 1600 nodes by generating sensors values in 4 different files.
+	 * static File file1 = new File("logDataSensor1.txt");
 	static File file2 = new File("logDataSensor2.txt");
 	static File file3 = new File("logDataSensor3.txt");
-	static File file4 = new File("logDataSensor4.txt");
+	static File file4 = new File("logDataSensor4.txt");*/
 
 
 	public static void main(String[] args) {
 		try {
-            FileReader fr = new FileReader((args.length > 0) ? args[0] : "nodes_test.csv");
+			Global.numberOfNodes = (Integer.parseInt(args[1]));
+			Global.filesPath = args[0];
+            FileReader fr = new FileReader((args.length > 0) ? Global.filesPath + "/nodes_test16.csv" : "nodes_test.csv");
             String[] sensorsIds = parseCsv(fr, ",", true);
-		
+            fileSensor = new File(Global.filesPath + "/logSensorsData.txt");
 		//String[] sensorsIds = {"N-H563T",	"N-QWNZH",	"N-LETTK",	"N-SCK04",	"N-8HOVD",	"N-2GWON",	"N-UFCUA",	"N-6PFYW",	"N-TZD20",	"N-WRYAZ",	"N-3IK0Y",	"N-JQ338",	"N-Y47X6",	"N-2Z2WK",	"N-GRDHN",	"N-L04BJ"};
-        for(int i=0; i<400;i++){
-		SensorDataSet sensorStart = new SensorDataSet (sensorsIds[i], file1);
+        
+		// Start sensors thread to write random values
+		for(int i=0; i<Global.numberOfNodes;i++){
+		SensorDataSet sensorStart = new SensorDataSet (sensorsIds[i], fileSensor);
 	     sensorStart.start ();
 	     }
-        for(int i=400; i<800;i++){
+		//for testing 1600 nodes by writing sensor values in 4 separate files
+        /*for(int i=400; i<800;i++){
     		SensorDataSet sensorStart = new SensorDataSet (sensorsIds[i], file2);
     	     sensorStart.start ();
     	     }
@@ -55,14 +47,14 @@ public class StartSensors {
         for(int i=1200; i<1600; i++){
     		SensorDataSet sensorStart = new SensorDataSet (sensorsIds[i], file4);
     	     sensorStart.start ();
-        }
+        }*/
 	    // SensorInfoJson sensorJsonInfo = new SensorInfoJson();
 	     //sensorJsonInfo.start ();
          while(true){
         	 SensorInfoJson sensorJsonInfo = new SensorInfoJson(sensorsIds);
     	     sensorJsonInfo.start ();
          try {
-			TimeUnit.SECONDS.sleep(100);
+			TimeUnit.SECONDS.sleep(1);
 			sensorJsonInfo.stop();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
@@ -78,7 +70,7 @@ public class StartSensors {
 		public static String[] parseCsv(Reader reader, String separator, boolean hasHeader) throws IOException {
 	        //Map<String, List<String>> values = new LinkedHashMap<String, List<String>>();
 	        List<String> columnNames = new LinkedList<String>();
-	        String[] nodesInfo = new String[1600];
+	        String[] nodesInfo = new String[Global.numberOfNodes];
 	        int nodeCount=0;
 	        BufferedReader br = null;
 	        br = new BufferedReader(reader);
